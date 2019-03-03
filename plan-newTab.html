@@ -1,0 +1,330 @@
+                                     
+<div class="row plan-new">
+   
+   <div class="col-md-12 p-b-20"> 
+        <div class="btn-group content_nav nav-secondary" role="group" aria-label="Basic example">
+                <a type="button" href="#" onclick="tabsDinamic('plans-benefit-Tab','plans','plans','Plans')" class="btn btn-nav nav-active">Dashboard</a>
+                <a type="button" href="#" onclick="tabsDinamic('plan-groupsTab','planGroups','planGroups','Groups')" class="btn btn-nav">Groups</a>
+                <a type="button" href="#" class="btn btn-nav">Copays</a>
+        </div>
+    </div>
+
+
+   
+    <div class="p-t-20 form-group col-md-10">
+        <label for="plan-name" class="f-w-600">Plan name</label>
+        <div class="">
+                <input type="text" name="plan-name" id="plan-name"  maxlength="50" title="Plan name" class="form-control col-md-10" placeholder="Plan name *">                                                
+        </div>
+    </div>
+    <div class="form-group col-md-3">
+        <label for="date-effective" class="f-w-600">Effective Date</label>
+        <div class="">
+                <input type="date" name="date-effective" id="date-effective" class="form-control" placeholder="Effective Date *">                                                
+        </div>
+    </div>
+
+    <div class="form-group col-md-3">
+        <div class="switchery-content">
+            <label for="chek1" class="f-w-600">Expiration Date</label>
+            <input type="checkbox" data-size="small" id="plan_new_chek1" onchange="changeExpire('plan_new_chek1','date-expiration')" checked class="plan-new jsSwitch" data-color="#ff9900" />
+        </div>
+        <div class="">
+                <input type="date" name="date-expiration" id="date-expiration" class="form-control" placeholder="Expiration Date *">                                                
+        </div>
+    </div>
+
+    
+
+    <div class="col-md-12">
+        
+        <fieldset class="fieldset-plan-new">
+        <legend align="center" class="legend-plan-new">Plan Details</legend>
+        
+                                                   
+            <div class="background-details m-b-15 row">
+                <div class="col-md-12"><label for="dept">Select the benefit that you want to include on this plan</label></div>
+                <div class="form-group col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Categroy
+                            </span>
+                        </div>
+                        <select class="form-control custom-select" id="category">
+                            <option>-- Select a category --</option>                  
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Benefit
+                            </span>
+                        </div>
+                        <select class="form-control custom-select" id="benefit">
+                            <option>-- Select a benefit --</option>                  
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label >Effective Date</label>
+                    <div class="input-group">                                                
+                       <input type="date" class="form-control" name="effectivedate" id="effectivedate">
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <div class="switchery-content">
+                        <label >Expiration Date</label>
+                        <input type="checkbox" data-size="small" onchange="changeExpire('plan_new_chek2','expirationdate')" id="plan_new_chek2" class="plan-new jsSwitch" data-color="#ff9900" />
+                    </div>
+                    <div class="input-group">                                                
+                       <input type="date" disabled="" class="form-control" name="expirationdate" id="expirationdate">
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="year">Benefit year calculation type</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Select
+                            </span>
+                        </div>
+                        <select class="form-control custom-select" id="year">
+                            <option>-- Calendar year (1 year) --</option>                  
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="level">Service Level</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Select
+                            </span>
+                        </div>
+                        <select class="form-control custom-select" id="level">
+                            <option>-- In network --</option>                  
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group m-auto">
+                    <button class="btn btn-secondary btnBenefit p-20 font-16 active" onclick="associate('plan-new')" id="saveBenefit">Associate benefit to this plan</button>
+                </div>
+                <div class="col-md-12 m-t-40 tb-myTable">
+                    <div class="table-responsive">
+                        <table id="" class="myTable myTableAssociate display nowrap table table-hover table-striped" cellspacing="0" width="100%"">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Category</th>
+                                    <th>Benefit</th>
+                                    <th>Effective Date</th>
+                                    <th>Expiration Date</th>
+                                    <th>Benefit Year</th>
+                                    <th>Service Level</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Category 1</td>
+                                    <td>Benefit 1</td>
+                                    <td>01/01/2018</td>
+                                    <td>31/12/2019</td>
+                                    <td>1 Year</td>
+                                    <td>In Network</td>
+                                    <td class="text-right">
+                                        <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                        <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                                    </td>                                      
+                                </tr>
+                                                                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        <a class="text-no-benefit" href="#"><span class="text-required">No benefits associated yet</span></a>
+       
+        </fieldset>
+        
+    </div>
+
+   
+    
+    <div class="col-md-6 p-t-20 content-deducibles">
+        <div class="background-details background-details-others">
+            <h3 class="text-center p-b-10">Deductible</h3>
+            <div class="form-group align-self-center text-center">
+                <input type="number" class="col-md-4 form-control" placeholder="Individual" name="individual">
+            </div>
+            <div class="form-group align-self-center text-center">
+                <input type="number" class="form-control col-md-4" placeholder="Family" name="family">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 p-t-20">
+        <div class="background-details background-details-others">
+            <h3 class="text-center p-b-10">Out of Pocket</h3>
+            <div class="form-group align-self-center text-center">
+                <input type="number" class="form-control col-md-4" placeholder="Max. Individual" name="max-individual">
+            </div>
+            <div class="form-group align-self-center text-center ">
+                <input type="number" class="form-control col-md-4" placeholder="Max. Family" name="max-family">
+            </div>
+            <div class="form-group align-self-center text-center">
+                <input type="number" class="form-control col-md-4" placeholder="Max. Life" name="max-life">
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="col-md-12">
+        
+        <fieldset class="fieldset-plan-new m-t-20">
+        <legend align="center" class="legend-plan-new">Plan Associations</legend>
+        
+                                                   
+            <div class="background-details background-assoc row">
+                <div class="form-group col-md-12">
+                    <label for="dept" class="f-w-600">Plan Payor Association</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Select
+                            </span>
+                        </div>
+                        <select class="form-control custom-select" id="category">
+                            <option>-- Payor name --</option>
+                            <option>-- Payor name 1 --</option>
+                            <option>-- Payor name 2 --</option>                  
+                        </select>
+                    </div>
+                </div>
+
+               
+
+                <div class="form-group col-md-3">
+                    <label >Effective Date</label>
+                    <div class="input-group">                                                
+                       <input type="date" class="form-control" name="effect-assoc" id="effect-assoc">
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <div class="switchery-content">
+                        <label >Expiration Date</label>
+                        <input type="checkbox" data-size="small" onchange="changeExpire('plan_new_chek3','expire-assoc')" id="plan_new_chek3" class="plan-new jsSwitch" data-color="#ff9900" />
+                    </div>
+                    <div class="input-group">                                                
+                       <input type="date" disabled="" class="form-control" name="expire-assoc" id="expire-assoc"> 
+                    </div>
+                </div>                                                  
+               
+
+                <div class="col-md-12 m-t-0"> 
+                    <div class="table-responsive ">
+                        <table id="" class="myTable display nowrap table table-hover table-striped" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Group name</th>
+                                    <th class="text-center">Actions</th>
+                                    <th>Effective Date</th>
+                                    <th>Expiration Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Sample group name</td>
+                                    <td class="text-center" ><i class="mdi mdi-checkbox-marked-circle icon-table icon-table-selected"></i></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="eff-date0"></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="ex-date0"></td>
+                                                                         
+                                </tr>
+
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Sample group name</td>
+                                    <td class="text-center"><i class="mdi mdi-plus-circle icon-table"></i></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="eff-date1"></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="ex-date1"></td>
+                                                                         
+                                </tr>
+
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Sample group name</td>
+                                    <td class="text-center"><i class="mdi mdi-plus-circle icon-table"></i></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="eff-date1"></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="ex-date1"></td>
+                                                                         
+                                </tr>
+
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Sample group name</td>
+                                    <td class="text-center" ><i class="mdi mdi-plus-circle icon-table"></i></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="eff-date1"></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="ex-date1"></td>
+                                                                         
+                                </tr>
+
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Sample group name</td>
+                                    <td class="text-center"><i class="mdi mdi-plus-circle icon-table"></i></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="eff-date1"></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="ex-date1"></td>
+                                                                         
+                                </tr>
+
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Sample group name</td>
+                                    <td class="text-center"><i class="mdi mdi-plus-circle icon-table"></i></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="eff-date2"></td>
+                                    <td><input type="date" class="form-control form-control-sm"  name="ex-date2"></td>
+                                                                         
+                                </tr>
+                                                                                  
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+        
+    </div>
+
+
+    <div class="col-md-12 content-button m-t-20">
+        <button type="button" class="btn waves-effect btn-secondary">Cancel</button>
+        <button class="btn waves-effect waves-light btn-primary" type="button" id="savePayer">Create Plan</button>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        var hre = "plan-new";
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.'+hre+' .jsSwitch'));
+        $('.'+hre+' .jsSwitch').each(function() {
+            new Switchery($(this)[0], $(this).data());
+        });
+    });
+</script>
+    

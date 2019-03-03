@@ -1,0 +1,255 @@
+
+<div class="row dashboardAdmin">
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="card content-form-payers">
+            <div class="card-body">
+                
+                <div id="accordion">
+                  <div class="card m-b-0">
+                    <div class="card-header content-add-atributes content-catg" id="headingCatg1" data-toggle="collapse" data-target="#collapseCatg1" aria-expanded="true" aria-controls="collapseCatg1">
+                        <a class="card-link mb-0 f-w-600" >
+                            Category 1
+                        </a>
+                    </div>
+
+                    <div id="collapseCatg1" class="collapse show" aria-labelledby="headingCatg1" data-parent="#accordion">
+                      <div class="card-body p-0">
+                        <ul class="list-group list-catg-lookup">
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action active">
+                            Table 1
+                            <span class="badge badge-secondary badge-pill">12</span>
+                          </a>
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action ">
+                            Table 2
+                            <span class="badge badge-secondary badge-pill">2</span>
+                          </a>
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+                            Table 3
+                            <span class="badge badge-secondary badge-pill">1</span>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card m-b-0">
+                    <div class="card-header content-add-atributes content-catg" id="headingCatg2" data-toggle="collapse" data-target="#collapseCatg2" aria-expanded="false" aria-controls="collapseCatg2">
+                        <a class="card-link mb-0 collapsed f-w-600" >
+                          Category 2
+                        </a>
+                    </div>
+                    <div id="collapseCatg2" class="collapse" aria-labelledby="headingCatg2" data-parent="#accordion"> 
+                      <div class="card-body p-0">
+                        <ul class="list-group list-catg-lookup">
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+                            Table 1
+                            <span class="badge badge-secondary badge-pill">12</span>
+                          </a>
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action ">
+                            Table 2
+                            <span class="badge badge-secondary badge-pill">2</span>
+                          </a>
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+                            Table 3
+                            <span class="badge badge-secondary badge-pill">1</span>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card m-b-0">
+                    <div class="card-header content-add-atributes content-catg" id="headingCatg3" data-toggle="collapse" data-target="#collapseCatg3" aria-expanded="false" aria-controls="collapseCatg3">
+                         <a class="card-link mb-0 collapsed f-w-600" >
+                          Category 3
+                        </a>
+                    </div>
+                    <div id="collapseCatg3" class="collapse" aria-labelledby="headingCatg3" data-parent="#accordion">
+                      <div class="card-body p-0">
+                        <ul class="list-group list-catg-lookup">
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+                            Table 1
+                            <span class="badge badge-secondary badge-pill">12</span>
+                          </a>
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action ">
+                            Table 2
+                            <span class="badge badge-secondary badge-pill">2</span>
+                          </a>
+                          <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+                            Table 3
+                            <span class="badge badge-secondary badge-pill">1</span>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>                                
+        </div>
+    </div>
+
+    <div class="col-md-9 col-sm-12 col-xs-12">
+
+        <div class="card content-form-payers">
+            <div class="card-body">
+            <h4 class="card-title">Table 1</h4>
+                
+                <form role="form" enctype='multipart/form-data'>
+                    <div class="p-l-10 content-button-add-atributes btnSaveFile">     
+                        <button type="submit" class="btn waves-effect btn-primary" id="">Upload</button>
+                    </div>
+
+                    <div class="p-l-10 content-button-add-atributes"">     
+                        <label for="file-upload" id="info" class="btn btn-block btn-outline-info">
+                            <i class="mdi mdi-upload"></i> File upload
+                        </label>
+                        <input id="file-upload" required accept=".csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" class="form-control" onchange='change()' type="file" style='display: none;'/>
+                    </div>
+                </form>
+                <div class="col-md-3 content-button-add-atributes">     
+                    <button type="button" class="btn btn-block btn-outline-info" data-toggle="modal" data-target="#newmodal">Add new</button>
+                </div>
+
+
+                <div class="table-responsive m-t-20">
+                    <table id="" class="display tableAddrow nowrap table table-hover table-striped" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th></th>                             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td>System</td>
+                                <td>223 Edinburgh</td>
+                                <td class="text-center">
+                                    <a href="#" class="p-r-10" data-toggle="modal" data-target="#editormodal"><span><i class="fas fa-edit"></i></span></a>
+                                    <a href="#" data-toggle="modal" data-target="#modalRemoveAdmin"><span><i class="fas fa-trash-alt"></i></span></a>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>1224</td>
+                                <td>System</td>
+                                <td>225 Edinburgh</td>
+                                <td class="text-center">
+                                    <a href="#" class="p-r-10" data-toggle="modal" data-target="#editormodal"><span><i class="fas fa-edit"></i></span></a>
+                                    <a href="#" data-toggle="modal" data-target="#modalRemoveAdmin"><span><i class="fas fa-trash-alt"></i></span></a>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>1214</td>
+                                <td>System 2</td>
+                                <td>2 Edinburgh</td>
+                                <td class="text-center">
+                                    <a href="#" class="p-r-10" data-toggle="modal" data-target="#editormodal"><span><i class="fas fa-edit"></i></span></a>
+                                    <a href="#" data-toggle="modal" data-target="#modalRemoveAdmin"><span><i class="fas fa-trash-alt"></i></span></a>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>1204</td>
+                                <td>System</td>
+                                <td>223 Edinburgh</td>
+                                <td class="text-center">
+                                    <a href="#" class="p-r-10" data-toggle="modal" data-target="#editormodal"><span><i class="fas fa-edit"></i></span></a>
+                                    <a href="#" data-toggle="modal" data-target="#modalRemoveAdmin"><span><i class="fas fa-trash-alt"></i></span></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Start Popup Model -->
+                <div class="modal fade" id="newmodal" tabindex="-1" role="dialog" aria-labelledby="editor-title">
+                    <div class="modal-dialog" role="document">
+                        <form class="modal-content form-horizontal" id="editor">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="editor-title">New Record</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                
+                            </div>
+                            <div class="modal-body row col-md-12">
+                                <div class="form-group col-md-6 required">
+                                    <label for="name" class="control-label">Name</label>
+                                    <div class="">
+                                        <input type="text" class="form-control" id="name-new" name="name-new" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 required">
+                                    <label for="descr" class="control-label">Description</label>
+                                    <div class="">
+                                        <input type="text" class="form-control" id="descr-new" name="descr-new" placeholder="Address"required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn waves-effect btn-primary">Add new</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Modal edit -->
+                <div class="modal fade" id="editormodal" tabindex="-1" role="dialog" aria-labelledby="editor-title">
+                    <div class="modal-dialog" role="document">
+                        <form class="modal-content form-horizontal" id="editor">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="editor-title">Edit Row</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                
+                            </div>
+                            <div class="modal-body row col-md-12">
+                                <div class="form-group col-md-6 required">
+                                    <label for="name" class="control-label">Name</label>
+                                    <div class="">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="System" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 required">
+                                    <label for="descr" class="control-label">Description</label>
+                                    <div class="">
+                                        <input type="text" class="form-control" id="descr" name="descr" placeholder="Address" value="223 Edinburgh" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn waves-effect btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Popup Model -->
+                <!-- Modal Remove Atribute -->                    
+                <!-- modal content -->
+                <div id="modalRemoveAdmin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vcenter" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header title-modal">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <h4 class="p-t-20 modal-title text-center" id="vcenter">Warning Message</h4>
+                            <div class="modal-body info-modal-remove">
+                                <h2><span><i class="mdi mdi-alert-circle"></i></span></h2>
+                                <strong><p>Are you sure you want to remove this record?</p></strong>
+                            </div>
+                            <div class="modal-footer buttons-modal">
+                                <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary waves-effect" data-dismiss="modal">Yes, delete it!</button>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+</div>
+

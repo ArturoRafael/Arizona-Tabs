@@ -1,0 +1,329 @@
+                                       
+<div class="row planGroups">
+   
+   <div class="col-md-12 p-b-20"> 
+        <div class="btn-group content_nav nav-secondary" role="group" aria-label="Basic example">
+                <a type="button" href="#" onclick="tabsDinamic('plans-benefit-Tab','plans','plans','Plans')" class="btn btn-nav">Dashboard</a>
+                <a type="button" href="#" class="btn btn-nav nav-active">Groups</a>
+                <a type="button" href="#" class="btn btn-nav">Copays</a>
+        </div>
+    </div>
+       
+    	
+	<div class="beforetable col-md-12 p-b-40">
+        <div class="content_filt_all">
+            <div class="col-lg-2 col-md-4 content_filt_table">
+                <button type="button" onclick="tabsDinamic('groupBenefit-newTab','groupBenefitNew','groupBenefitNew','New Group')" class="btn btn-block btn-outline-info">New Group</button>
+            </div>
+        </div>
+        <form role="form" class="row">
+            <div class="col-md-12">
+                <h2>Filter and Advanced Search</h2>
+            </div>
+            
+            <div class="col-md-6">
+            
+            <div class="input-group">
+              <div class="input-group-prepend">
+                
+                <select class="form-control" required="" data-style="form-control btn-default">
+                        <option selected="">Select</option>
+                        <option>Identifier</option>
+                        <option>Name</option>                              
+                        <option>Type</option>
+                        <option>Servicing Area</option>                    
+                </select>
+                
+              </div>
+              <input type="text" required="" class="form-control" placeholder="Value">
+            </div>
+
+            </div>
+
+            <div class="text-right btnsearchAvanced">
+                <button class="btn waves-effect waves-light btn-secondary" onclick="showTable('planGroups');" type="button">Search</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="afterfilt col-md-12">
+        <div class="table-responsive">
+            <table id="" class="display myTable myTableDas nowrap table table-hover table-striped" cellspacing="0" width="100%"">
+                <thead>
+                    <tr>
+                        <th>Identifier</th>
+                        <th>Name</th>
+                        <th>Effective Date</th>
+                        <th>Expiration Date</th>
+                        <th>Type</th>
+                        <th>Servicing Area Type</th>                         
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>                                                      
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1234XXABC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                    </tr>
+                    <tr>
+                        <td>1224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 2- Dade Miami- Florida</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2224XXBBC</td>
+                        <td>Sample Group Name</td>
+                        <td>01/01/19</td>
+                        <td>31/12/19</td>
+                        <td>Medicare</td>
+                        <td>Region 1- Dade Miami- Florida</td>
+                        
+                    </tr>                                                    
+                </tbody>
+            </table>
+        </div>
+    </div>                                    
+</div>
+

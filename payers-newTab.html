@@ -1,0 +1,470 @@
+<div class="row payerNew">
+                    
+    <div class="col-md-12 p-b-20"> 
+        <div class="btn-group content_nav nav-secondary" role="group" aria-label="Basic example">
+                <a type="button" href="#" onclick="tabsDinamic('payers-Tab','payer','payer','Payers')" class="btn btn-nav nav-active">Dashboard</a>
+                <a type="button" href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-nav">Groups</a>
+                <a type="button" href="#" class="btn btn-nav">Atributes</a>
+        </div>
+    </div>
+
+                    
+                    
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <span class="field_mjs">Fields with (*) are required</span>
+        <div class="card content-form-payers">
+            <div class="card-body">                                               
+                
+                <form class="form p-t-20 row">
+                    <div class="form-group col-md-12">
+                        <label for="name">Name</label>
+                        <div class="input-group">
+                            <input type="text" required="" class="form-control" id="name" placeholder="Payer name*">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="phonenumber">Phone Number</label>
+                        <div class="input-group">                                 
+                            <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number*">
+                            
+                        </div> 
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="phonenumber">Extension</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="extension" placeholder="Ext.">
+                        </div> 
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="faxnumber">Fax Number</label>
+                        <div class="input-group">
+                            
+                            <input type="tel" class="form-control" id="faxnumber" placeholder="Fax number">                                 
+                        </div> 
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                            
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="Address_1">Address 1</label>
+                        <div class="input-group">
+                            
+                            <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1*">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="Address_2">Address 2</label>
+                        <div class="input-group">
+                            
+                            <input type="text" class="form-control" id="Address_2" placeholder="Address 2">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group col-md-9">
+                        <label for="city">City</label>
+                        <div class="input-group">
+                            
+                            <input type="text" required="" class="form-control" id="city" placeholder="City*">
+                        </div>
+                    </div>
+                     <div class="form-group col-md-3">
+                        <label for="zipcode">Zip Code</label>
+                        <div class="input-group">
+                            
+                            <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+                        </div>
+                    </div>
+                     
+                    <div class="form-group col-md-12">
+                        <label for="state">State</label>
+                        <div class="input-group">                                  
+                            <select class="form-control custom-select" id="state">
+                                <option>--Select your State--</option>                  
+                            </select>
+                        </div>
+                    </div>                                                  
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <span class="nameNewPayer">Contract</span>
+        <div class="card content-form-payers">
+            <div class="card-body">                                               
+                <form class="form p-t-20 row">
+                    <div class="form-group col-md-12">
+                        <label for="contracttype">Payer contract type</label>
+                        <div class="input-group">                                 
+                            <select class="form-control custom-select" id="contracttype">
+                                <option>--Select contract type--</option>                  
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="neic">NEIC ID</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="neic" placeholder="NEIC ID*">                                    
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="tax">Tax ID</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="tax" placeholder="Tax ID">                                                            
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="effdate">Payer Eff Date</label>
+                        <div class="input-group">
+                            <input type="date" required="" class="form-control" id="effdate" placeholder="Payer Eff Date*">                                                            
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="expdate">Payer Exp Date</label>
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="expdate" placeholder="Payer Exp Date">                                                           
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="mdcontrat">Medicare Contract ID</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare Contract ID">                                     
+                        </div>
+                    </div>                                                    
+                </form>
+            </div>
+        </div>
+    
+        <div class="card content-form-payers p-10">
+            <div class="card-body content-max-payer">
+                <h3 class="card-title">Delegations Associated</h3>
+                <form class="form p-t-20">                                                    
+                    <ul class="list-group">
+                        <div class="row col-md-12 listCheck">
+                            <li class="checkbox checkbox-success p-b-10 col-md-6">
+                                <input type="checkbox" class="list-group-item filled-in chk-col-light-blue" id="checkbox_1"> 
+                                <label for="checkbox_1"> Compliance </label>
+                            </li>
+                            <li class="checkbox checkbox-success p-b-10 col-md-6">
+                                <input type="checkbox" id="checkbox_2" class="list-group-item  filled-in chk-col-light-blue">
+                                <label for="checkbox_2"> UM </label>
+                            </li>
+                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                                <input type="checkbox" id="checkbox_3" class="list-group-item filled-in chk-col-light-blue">
+                                <label for="checkbox_3"> Sample Delegation name 1 </label>
+                            </li>
+                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                                <input type="checkbox" id="checkbox_4" class="list-group-item filled-in chk-col-light-blue">
+                                <label for="checkbox_4"> Sample Delegation name 2 </label>
+                            </li>
+                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                                <input type="checkbox" id="checkbox_5" class="list-group-item filled-in chk-col-light-blue">
+                                <label for="checkbox_5"> Sample Delegation name 3 </label>
+                            </li>
+                             <li class="checkbox checkbox-success p-b-10  col-md-6">
+                                <input type="checkbox" id="checkbox_6" class="list-group-item filled-in chk-col-light-blue">
+                                <label for="checkbox_6"> Sample Delegation name 4 </label>
+                            </li>
+                             <li class="checkbox checkbox-success p-b-10  col-md-6">
+                                <input type="checkbox" id="checkbox_7" class="list-group-item filled-in chk-col-light-blue">
+                                <label for="checkbox_7"> Sample Delegation name 5 </label>
+                            </li>
+                        </div>                                                        
+                    </ul>                            
+                </form>
+            </div>
+        </div>         
+    </div>
+    
+    <!-- END  GROUPS -->
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="card content-form-payers p-10">
+            <div class="card-body">
+                <div class="row col-md-12 content-manage">
+                    <div class="col-md-7 text-manage">
+                        <p class="p-0 m-0">To associate this payer to a group you can do it directly on group management.</p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <a href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-20">Manage Groups</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Payer Atributes-->
+    <div class="col-md-6" id="accordion">
+        <div class="card">
+            <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapseOne">
+              <a class="card-link f-w-600">
+                Payer Atributes
+              </a>
+              <span><i class="icon-collapse ti-angle-down"></i></span>
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="col-md-5 content-button-add-atributes">     
+                        <button type="button" class="btn btn-block btn-outline-info" data-toggle="modal" data-target="#myModalAttributePayerNew">Add more atributes</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="" class="display myTable nowrap table table-hover table-striped" cellspacing="0" width="100%"">
+                            <thead>
+                                <tr>
+                                    <th>Atribute</th>
+                                    <th>Value</th>
+                                    <th>Effective Date</th>
+                                    <th>Expiration Date</th> 
+                                    <th></th>       
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END  ATRIBUTES -->
+
+
+    <!-- Payer CONTANCT-->
+    <div class="col-md-6" id="accordionConact">
+        <div class="card">
+            <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapsetwo">
+              <a class="card-link f-w-600" >
+                Contacts
+              </a>
+              <span><i class="icon-collapse ti-angle-down"></i></span>
+            </div>
+            <div id="collapsetwo" class="collapse" data-parent="#accordionConact">
+                <div class="card-body">
+                    <div class="col-md-5 content-button-add-atributes">     
+                        <button class="btn btn-block btn-outline-info" id="basic-addon1" data-toggle="modal" data-target="#myModalContactPayerNew">Add new contact info</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="" class="display myTable nowrap table table-hover table-striped" cellspacing="0" width="100%"">
+                            <thead>
+                                <tr>
+                                    <th>Area - Departament</th>
+                                    <th>Contact Person</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END  CONTANCT -->
+                    
+    <div class="col-md-12 content-button">
+        <button type="button" class="btn waves-effect btn-secondary">Cancel</button>
+        <button class="btn waves-effect waves-light btn-primary" type="button" id="savePayer">Save Payer</button>
+    </div>
+
+</div>
+<!-- END ROW -->                               
+                
+
+<!-- Modal Add Contact -->                    
+<!-- modal content -->
+<div id="myModalContactPayerNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header-contact"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <h4 class="modal-title text-center" id="myModalLabel">Add Contact Info</h4>
+            <div class="modal-body">                                
+                <form class="form p-10 row" >                                    
+                        <div class="form-group col-md-12">
+                            <label for="dept">Area - Departament</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        Area - Dep
+                                    </span>
+                                </div>
+                                <select class="form-control custom-select" id="dept">
+                                    <option>Marketing and Sales</option>                  
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name">Contact Person</label>
+                            <div class="input-group">                                                
+                                <input type="text" required="" class="form-control" id="name" placeholder="Contact Person">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-9">
+                            <label for="phonenumber">Phone number</label>
+                            <div class="input-group">                                                
+                                <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number">
+                            </div> 
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="extension">Extension</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="extension" placeholder="Ext.">
+                            </div> 
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="faxnumber">Fax number</label>
+                            <div class="input-group">                                               
+                                <input type="text" class="form-control" id="faxnumber" placeholder="Fax number">
+                            </div> 
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="email">Email</label>
+                            <div class="input-group">                                                
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="Address_1">Address 1</label>                                           
+                            <div class="input-group">                                                
+                                <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">                                            
+                            <label for="Address_2">Address 2</label> 
+                            <div class="input-group">                                                
+                                <input type="text" class="form-control" id="Address_2" placeholder="Address 2">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group col-md-8">
+                            <label for="city">City</label>                                            
+                            <div class="input-group">                                                
+                                <input type="text" required="" class="form-control" id="city" placeholder="City">
+                            </div>
+                        </div>
+                         <div class="form-group col-md-4">
+                            <label for="zipcode">Zip Code</label>                                             
+                            <div class="input-group">                                                
+                                <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+                            </div>
+                        </div>
+                         
+                        <div class="form-group col-md-12">
+                            <label for="state">State</label>                                            
+                            <div class="input-group">                                                
+                                <select class="form-control custom-select" id="state">
+                                    <option>--Select your State--</option>                  
+                                </select>
+                            </div>
+                        </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn waves-effect btn-primary" data-dismiss="modal">Add Contact</button>
+            </div>
+        </div>                        
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+
+<!-- Modal Add Atributes -->                    
+<div id="myModalAttributePayerNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header-contact"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <h4 class="modal-title text-center" id="myModalLabel">Add an Attribute to Payer</h4>
+            <div class="modal-body">                                
+                <form class="form p-10 row">
+
+                        <div class="form-group col-md-12 p-t-20 p-b-10 table-responsive">
+                            <table id="" class="display myTableAddAtributes nowrap table table-hover table-striped" cellspacing="0" width="100%"">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="w-10">
+                                          <input name="group1" type="radio" class="with-gap" id="radio_1">
+                                          <label for="radio_1"></label>
+                                        </td>
+                                        <td>#1</td>
+                                        <td>Attribute 1</td>
+                                    </tr>
+                                     <tr>
+                                        <td class="w-10">
+                                            <input name="group1" type="radio" class="with-gap" id="radio_2" >
+                                          <label for="radio_2"></label>
+                                        </td>
+                                        <td>#2</td>
+                                        <td>Attribute 2</td>
+                                    </tr>
+                                     <tr>
+                                        <td class="w-10">
+                                            <input name="group1" type="radio" class="with-gap" id="radio_3" >
+                                          <label for="radio_3"></label>
+                                        </td>
+                                        <td>#3</td>
+                                        <td>Attribute 3</td>
+                                    </tr>
+                                     <tr>
+                                        <td class="w-10">
+                                           <input name="group1" type="radio" class="with-gap" id="radio_4" >
+                                          <label for="radio_4"></label> 
+                                        </td>
+                                        <td>#4</td>
+                                        <td>Attribute 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+
+                        <div class="form-group col-md-12">
+                            <label for="values">Value</label>
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control" id="values" placeholder="Value">
+                            </div> 
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="dateend">Effective Date</label>
+                            <div class="input-group">                                                
+                                <input type="date" class="form-control" id="dateend" placeholder="Effective Date">
+                            </div> 
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="datexp">Expiration Date</label>
+                            <div class="input-group">                                                
+                                <input type="date" class="form-control" id="datexp" placeholder="Expiration Date">
+                            </div> 
+                        </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn waves-effect btn-primary" data-dismiss="modal">Add Attribute</button>
+            </div>
+        </div>                       
+    </div>
+    <!-- /.modal-dialog -->
+</div>        
+       
+   

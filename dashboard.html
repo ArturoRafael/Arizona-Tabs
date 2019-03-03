@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Arizona</title>    
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/datatables/media/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
+    <link href="assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <link href="assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/plugins/multiselect/css/multi-select.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>    
+    
+    <div id="main-wrapper">
+        
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">                
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="javascript:void(0)">
+                        <b>
+                           <!-- <img src="assets/images/logo-light-icon.png" alt="homepage" /> -->
+                        </b>
+                        <span>
+                            <img class="img-logo" src="assets/images/logo-light-text.png" alt="homepage" />
+                        </span>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="navbar-collapse">                    
+                    <!-- toggle and nav items -->                    
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>                        
+                        
+                    </ul>
+                    
+                    
+                    <ul class="navbar-nav my-lg-0">
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-email"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu mailbox dropdown-menu-right scale-up" aria-labelledby="2">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">You have 4 new messages</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center">
+                                           
+                                            <a href="#">
+                                                <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                                            </a>
+                                            
+                                            <a href="#">
+                                                <div class="user-img"> <img src="assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                                            </a>
+                                            
+                                            <a href="#">
+                                                <div class="user-img"> <img src="assets/images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                                            </a>
+                                            
+                                            <a href="#">
+                                                <div class="user-img"> <img src="assets/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <!-- Profile -->                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>Steave Jobs</h4>
+                                                <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="index.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+       
+        <aside class="left-sidebar">           
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li> <a class="has-arrow waves-effect waves-dark nav-active" href="#" aria-expanded="true"><i class="mdi mdi-domain"></i><span class="hide-menu active">Payers </span></a>
+                            <ul aria-expanded="false" class="collapse in">
+                                <li class="subitem"><a href="#" onclick="tabsDinamic('payers-Tab','payer','payer','Payers')">Dashboard</a></li>
+                                <li class="subitem"><a href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')">Groups</a></li>
+                                <li class="subitem"><a href="">Atributes</a></li>                                
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book"></i><span class="hide-menu">Plan Benefit Product</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li class="subitem"><a href="#" onclick="tabsDinamic('plans-benefit-Tab','plans','plans','Plans')">Dashboard</a></li>
+                                <li class="subitem"><a href="#" onclick="tabsDinamic('plan-groupsTab','planGroups','planGroups','Groups')">Groups</a></li>
+                                <li class="subitem"><a href="#">Copays</a></li> 
+                            </ul>
+                        </li>
+                         <li> 
+                            <a class="waves-effect waves-dark" href="#" onclick="tabsDinamic('dashboardAdmin-Tab','dashboardAdmin','dashboardAdmin','Entity Maintenance')"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Entity Maintenance</span></a>
+                        </li>
+                        <li> 
+                            <a class="waves-effect waves-dark" href="#" onclick="tabsDinamic('dashboardSys-Tab','dashboardSys','dashboardSys','User Access')"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">User Access</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </aside>
+        
+        <div class="page-wrapper">
+            
+            <div class="container-fluid">                
+                <div class="row">                    
+                    <div class="col-lg-12 col-md-12">
+                        <div class="card">
+                            <div class="">
+                                
+                                <ul class="nav nav-tabs customtab" id="myTab" role="tablist">
+                                    <li class="nav-item li-tab-toggle" href="#default">
+                                        <a class="nav-link active" id="default-tab" data-toggle="tab" href="#default" role="tab" aria-controls="default" aria-expanded="true">
+                                            <span class="hidden-sm-up"><i class="ti-home"></i></span> 
+                                            <span class="hidden-xs-down">Tab Default</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="tab-content tabcontent-border p-40" id="myTabContent">
+                                    <div role="tabpanel" class="tab-pane fade show active" id="default" aria-labelledby="default-tab">
+                                        <div class="row">
+                                            <!-- Column -->
+                                            <div class="col-lg-3 col-md-6">
+                                                <div class="card content-form-payers">
+                                                    <div class="card-body">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="round round-lg align-self-center round-info"><i class="ti-wallet"></i></div>
+                                                            <div class="m-l-10 align-self-center">
+                                                                <h3 class="m-b-0 font-light">Total Revenue</h3>
+                                                                <h5 class="text-muted m-b-0">3249</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Column -->
+                                            <!-- Column -->
+                                            <div class="col-lg-3 col-md-6">
+                                                <div class="card content-form-payers">
+                                                    <div class="card-body">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="round round-lg align-self-center round-warning"><i class="mdi mdi-cellphone-link"></i></div>
+                                                            <div class="m-l-10 align-self-center">
+                                                                <h3 class="m-b-0 font-light">Online Revenue</h3>
+                                                                <h5 class="text-muted m-b-0">2376</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Column -->
+                                            <!-- Column -->
+                                            <div class="col-lg-3 col-md-6">
+                                                <div class="card content-form-payers">
+                                                    <div class="card-body">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="round round-lg align-self-center round-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                                            <div class="m-l-10 align-self-center">
+                                                                <h3 class="m-b-0 font-light">Offline Revenue</h3>
+                                                                <h5 class="text-muted m-b-0">1795</h5></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Column -->
+                                            <!-- Column -->
+                                            <div class="col-lg-3 col-md-6">
+                                                <div class="card content-form-payers">
+                                                    <div class="card-body">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="round round-lg align-self-center round-danger"><i class="mdi mdi-bullseye"></i></div>
+                                                            <div class="m-l-10 align-self-center">
+                                                                <h3 class="m-b-0 font-light">Ad. Expense</h3>
+                                                                <h5 class="text-muted m-b-0">687</h5></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Column -->
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="card content-form-payers">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">Our Visitors</h3>
+                                                        <h6 class="card-subtitle">Different Devices Used to Visit</h6>
+                                                    </div>
+                                                    <div>
+                                                        <hr class="m-t-0 m-b-0">
+                                                    </div>
+                                                    <div class="card-body text-center">                 
+                                                         <h3 class="m-b-0 font-light">1369</h3><small>Records</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="card content-form-payers">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title">Our Visitors</h3>
+                                                        <h6 class="card-subtitle">Different Devices Used to Visit</h6>
+                                                    </div>
+                                                    <div>
+                                                        <hr class="m-t-0 m-b-0">
+                                                    </div>
+                                                    <div class="card-body text-center">                 
+                                                         <h3 class="m-b-0 font-light">1369</h3><small>Records</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                
+            </div>            
+            <!-- End Container fluid  -->
+            
+            
+            <!-- footer -->            
+            <footer class="footer footerIndex">
+                © 2019 HCAS Corporate Footer
+            </footer>
+            
+            
+            
+        </div>        
+        <!-- End Page wrapper  -->        
+    </div>
+    
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/plugins/popper/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!-- This is data table -->
+    <script src="assets/plugins/datatables/datatables.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script>    
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>      
+    <!--c3 JavaScript -->
+    <script src="assets/plugins/d3/d3.min.js"></script>
+    <script src="assets/plugins/c3-master/c3.min.js"></script>
+     <!-- Plugin JavaScript -->
+    <script src="assets/plugins/moment/moment.js"></script>
+    <script src="assets/plugins/switchery/dist/switchery.min.js"></script>
+    <script src="assets/plugins/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/multiselect/js/jquery.multi-select.js" type="text/javascript"></script>
+    <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="js/tabsDinamic.js"></script>
+
+</body>
+</html>

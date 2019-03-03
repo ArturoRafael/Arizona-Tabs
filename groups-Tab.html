@@ -1,0 +1,161 @@
+
+<div class="row groups">
+                                    
+    <div class="col-md-12 p-b-20"> 
+        <div class="btn-group content_nav nav-secondary" role="group" aria-label="Basic example">
+            <a type="button" href="#" onclick="tabsDinamic('payers-Tab','payer','payer','Payers')" class="btn btn-nav">Dashboard</a>
+            <a type="button" href="#" class="btn btn-nav nav-active ">Groups</a>
+            <a type="button" href="#" class="btn btn-nav">Atributes</a>
+        </div>
+    </div>
+   
+
+    <div class="beforetable col-md-12 p-b-40">
+        <div class="content_filt_all">
+            <div class="col-lg-2 col-md-4 content_filt_table">
+                <button type="button" onclick="tabsDinamic('group-newTab','newGroup','newGroup','New Group')" class="btn btn-block btn-outline-info">New Group</button>
+            </div>
+        </div>
+        <form role="form" class="row">
+            <div class="col-md-12">
+                <h2>Filter and Advanced Search</h2>
+            </div>
+            
+            <div class="col-md-6">
+            
+            <div class="input-group">
+              <div class="input-group-prepend">
+                
+                <select class="form-control" required="" data-style="form-control btn-default">
+                        <option selected="">Select</option>
+                        <option>Name</option>
+                        <option>Payer ID</option>                              
+                        <option>Contract ID</option>
+                </select>
+                
+              </div>
+              <input type="text" required="" class="form-control" placeholder="Value">
+            </div>
+
+            </div>
+
+            <div class="text-right btnsearchAvanced">
+                <button class="btn waves-effect waves-light btn-secondary" onclick="showTable('groups');" type="button">Search</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="afterfilt col-md-12">
+        <div class="table-responsive">
+            <table id="" class="tableDasGroup display nowrap table table-hover table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Payer ID</th>
+                        <th>Group</th>
+                        <th>Phone</th>
+                        <th>Contract ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >Payer 1</td>
+                        <td>1</td>
+                        <td >
+                            <span class="f-l"><b>Major Payers</b> - 3 Payers associated</span>
+                            <span class="f-r">                            
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr>
+                    <tr>
+                        <td >Payer 2</td>
+                        <td>2</td>
+                        <td >
+                            <span class="f-l"><b>Major Payers</b> - 3 Payers associated</span>
+                            <span class="f-r">                            
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr>
+                    <tr>
+                        <td >Payer 3</td>
+                        <td>3</td>
+                        <td>
+                            <span class="f-l"><b>Major Payers</b> - 3 Payers associated</span>
+                            <span class="f-r">                            
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                           
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr>
+                    <tr>
+                        <td>Payer 4</td>
+                        <td>4</td>
+                        <td>   
+                            <span class="f-l"><b>Located at Florida</b> - 4 Payers associated</span>
+                            <span class="f-r">
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr>   
+                    <tr>
+                        <td>Payer 5</td>
+                        <td>5</td>
+                        <td>   
+                            <span class="f-l"><b>Located at Florida</b> - 4 Payers associated</span>
+                            <span class="f-r">
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr> 
+                    <tr>
+                        <td>Payer 6</td>
+                        <td>6</td>
+                        <td>   
+                            <span class="f-l"><b>Located at Florida</b> - 4 Payers associated</span>
+                            <span class="f-r">
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr>   
+                    <tr>
+                        <td>Payer 7</td>
+                        <td>7</td>
+                        <td>   
+                            <span class="f-l"><b>Located at Florida</b> - 4 Payers associated</span>
+                            <span class="f-r">
+                                <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                            </span>
+                        </td>
+                        <td>(123) 123 - 4567</td>
+                        <td>ABC123</td>
+                    </tr>        
+                     
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>                              
+ 
