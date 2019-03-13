@@ -16,13 +16,13 @@
             <div class="card-body">                                               
                 
                 <form class="form p-t-20 row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-5">
                         <label for="name">Name</label>
                         <div class="input-group">
                             <input type="text" required="" class="form-control" id="name" placeholder="Payer name*">
                         </div>
                     </div>
-                    <div class="form-group col-md-9">
+                    <div class="form-group col-md-4">
                         <label for="phonenumber">Phone Number</label>
                         <div class="input-group">                                 
                             <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number*">
@@ -49,14 +49,14 @@
                             <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-6">
                         <label for="Address_1">Address 1</label>
                         <div class="input-group">
                             
                             <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1*">
                         </div>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-6">
                         <label for="Address_2">Address 2</label>
                         <div class="input-group">
                             
@@ -64,14 +64,14 @@
                         </div>
                     </div>
                     
-                    <div class="form-group col-md-9">
+                    <div class="form-group col-md-4">
                         <label for="city">City</label>
                         <div class="input-group">
                             
                             <input type="text" required="" class="form-control" id="city" placeholder="City*">
                         </div>
                     </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                         <label for="zipcode">Zip Code</label>
                         <div class="input-group">
                             
@@ -79,11 +79,12 @@
                         </div>
                     </div>
                      
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-4">
                         <label for="state">State</label>
                         <div class="input-group">                                  
-                            <select class="form-control custom-select" id="state">
-                                <option>--Select your State--</option>                  
+                            <select class="form-control" id="state">
+                                <option> State 1 </option>
+                                <option> State 2 </option>                  
                             </select>
                         </div>
                     </div>                                                  
@@ -91,49 +92,65 @@
                 
             </div>
         </div>
+
+        
+        <div class="card content-form-payers p-10">
+            <div class="card-body">
+                <div class="row col-md-12 content-manage">
+                    <div class="col-md-7 text-manage">
+                        <p class="p-0 m-0">To associate this payer to a group you can do it directly on group management.</p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <a href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-10">Manage Groups</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
+
     <div class="col-xs-12 col-sm-6 col-md-6">
         <span class="nameNewPayer">Contract</span>
         <div class="card content-form-payers">
             <div class="card-body">                                               
                 <form class="form p-t-20 row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-6">
                         <label for="contracttype">Payer contract type</label>
                         <div class="input-group">                                 
-                            <select class="form-control custom-select" id="contracttype">
-                                <option>--Select contract type--</option>                  
+                            <select class="form-control" id="contracttype">
+                                <option>Select contract type</option>                  
                             </select>
                         </div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-3">
                         <label for="neic">NEIC ID</label>
                         <div class="input-group">
                             <input type="text" class="form-control" id="neic" placeholder="NEIC ID*">                                    
                         </div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-3">
                         <label for="tax">Tax ID</label>
                         <div class="input-group">
                             <input type="text" class="form-control" id="tax" placeholder="Tax ID">                                                            
                         </div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="effdate">Payer Eff Date</label>
                         <div class="input-group">
                             <input type="date" required="" class="form-control" id="effdate" placeholder="Payer Eff Date*">                                                            
                         </div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="expdate">Payer Exp Date</label>
                         <div class="input-group">
                             <input type="date" class="form-control" id="expdate" placeholder="Payer Exp Date">                                                           
                         </div>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-4">
                         <label for="mdcontrat">Medicare Contract ID</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare Contract ID">                                     
+                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID">                                     
                         </div>
                     </div>                                                    
                 </form>
@@ -181,33 +198,19 @@
         </div>         
     </div>
     
-    <!-- END  GROUPS -->
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="card content-form-payers p-10">
-            <div class="card-body">
-                <div class="row col-md-12 content-manage">
-                    <div class="col-md-7 text-manage">
-                        <p class="p-0 m-0">To associate this payer to a group you can do it directly on group management.</p>
-                    </div>
-                    <div class="col-md-5 text-center">
-                        <a href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-20">Manage Groups</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
     <!-- Payer Atributes-->
     <div class="col-md-6" id="accordion">
         <div class="card">
-            <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapseOnePayerNew">
+            <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapseOnePayerNew" aria-expanded="true">
               <a class="card-link f-w-600">
                 Payer Atributes
               </a>
               <span><i class="icon-collapse ti-angle-down"></i></span>
             </div>
-            <div id="collapseOnePayerNew" class="collapse" data-parent="#accordion">
+            <div id="collapseOnePayerNew" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
                     <div class="col-md-5 content-button-add-atributes">     
                         <button type="button" class="btn btn-block btn-outline-info" data-toggle="modal" data-target="#myModalAttributePayerNew">Add more atributes</button>
@@ -238,13 +241,13 @@
     <!-- Payer CONTANCT-->
     <div class="col-md-6" id="accordionConact">
         <div class="card">
-            <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapsetwoPayerNew">
+            <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapsetwoPayerNew" aria-expanded="true">
               <a class="card-link f-w-600" >
                 Contacts
               </a>
               <span><i class="icon-collapse ti-angle-down"></i></span>
             </div>
-            <div id="collapsetwoPayerNew" class="collapse" data-parent="#accordionConact">
+            <div id="collapsetwoPayerNew" class="collapse show" data-parent="#accordionConact">
                 <div class="card-body">
                     <div class="col-md-5 content-button-add-atributes">     
                         <button class="btn btn-block btn-outline-info" id="basic-addon1" data-toggle="modal" data-target="#myModalContactPayerNew">Add new contact info</button>
@@ -277,9 +280,7 @@
 
 </div>
 <!-- END ROW -->                               
-                
-
-<!-- Modal Add Contact -->                    
+                    
 <!-- modal content -->
 <div id="myModalContactPayerNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
