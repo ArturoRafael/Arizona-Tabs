@@ -9,19 +9,23 @@
         </div>
     </div>
    
-    <div class="col-md-12 content_filt_all_group p-b-20">
-
-        <div class="content_filt_table content_filt_dropdown">
-            
-                <input type="text" name="group-name" id="group-name" class="form-control group-name" placeholder="Please enter the name of the group" title="Please enter the name of the group">
+    <div class="col-md-12 col-xs-12 col-sm-12 content_filt_all_group p-b-20">
+        <div class="form-group">
+            <div class="content_filt_table content_filt_dropdown">
+                <label for="group-name">Name of the Group</label>
+                <input type="text" name="group-name" id="group-name" class="form-control" placeholder="Please enter the name of the group" title="Please enter the name of the group">
                
-            <span class="text-required">This is a required field</span>
+            </div>
         </div>
     </div>
    
 
-    <div class="col-md-8">
-         <a href="#" class="text-required text-link col-md-4">Select all</a>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 p-b-20">
+        
+        <div class="p-b-30 hidden-xs-down hidden-sm-down hidden-md-down">
+            <a href="#" class="text-required">Select all</a>
+        </div>
+        
         <div class="table-responsive">
             <table id="" class="display myTable nowrap table table-hover table-striped" cellspacing="0" width="100%"">
                 <thead>
@@ -87,23 +91,31 @@
             </table>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-b-20">
         <div class="col-md-12 m0">
-            <h3 class="col-md-8 m0 panel-label">Selected Payers</h3>
-            <a class="text-required col-md-4 m0 panel-link text-link" href="#">Remove all</a>
+            <h3 class="col-md-8 col-xs-12 col-sm-12 m0 panel-label">Selected Payers</h3>
+            <a class="text-required col-md-4 hidden-xs-down hidden-sm-down hidden-md-down m0 panel-link" href="#">Remove all</a>
+        </div>
+        <div class="p-t-10 p-b-20 hidden-xl-up hidden-lg-up block-xs-down">
+            <a href="#" class="text-required f-l">Select all</a>
+            <a href="#" class="text-required f-r" >Remove all</a>
         </div>
         <div class="cards-panel">
-            <div class="card col-md-10 offset-1">
+            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
               <div class="card-body bg-white">
-                <h5 class="card-title col-md-10">ID: 1234</h5>
-                <i class="mdi mdi-close-circle col-md-2 close-card"></i>
+                <i class="mdi mdi-close-circle text-right close-card"></i>
+                <h5 class="card-title col-md-10 p-b-10">ID: 1234</h5>                
                 <h6 class="card-subtitle mb-2 text-muted">21st Century insurance 37</h6>
               </div>
             </div>
         </div>
-        <button type="button" class="btn waves-effect btn-primary btn-create-group">Create Group</button>
-        
     </div> 
+
+    <div class="col-md-12 col-xs-12 col-sm-12 p-t-30 content-button">
+        <button type="button" class="btn waves-effect btn-secondary">Cancel</button>
+        <button type="button" class="btn waves-effect btn-primary">Create Group</button>
+    </div>
+
 </div>    
                                                                       
 

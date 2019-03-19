@@ -1,6 +1,6 @@
 <div class="row editPayer">
     
-    <div class="col-md-12 p-b-20"> 
+    <div class="col-md-12 col-xs-12 col-sm-12 p-b-20"> 
         <div class="btn-group content_nav nav-secondary" role="group" aria-label="Basic example">
             <a type="button" href="#" onclick="tabsDinamic('payers-Tab','payer','payer','Payers')" class="btn btn-nav nav-active">Dashboard</a>
             <a type="button" href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-nav">Groups</a>
@@ -8,27 +8,25 @@
         </div>
     </div>
 
-    <div class="row col-md-12 p-b-20 p-t-10 contentInfoPayer">
+    <div class="row col-xs-12 col-sm-12 col-md-12 p-b-20 p-t-10 contentInfoPayer">
         <div class="col-md-10">
             <h2>The Guardian Life</h2>
             <h2>Insurance Company of America</h2>
             <a href="">ID: 123ABC <span><i class="fas fa-edit"></i></span></a>
         </div>
-
-        
     </div>
     
-    <div class="col-xs-12 col-sm-6 col-md-6">                                        
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">                                        
         <div class="card content-form-payers">
             <div class="card-body">                                               
-                <div class="content-add-atributes">
-                    <a href="">
-                        <span><i class="fas fa-edit"></i></span>
-                    </a>
-                </div>
-                <form class="form p-t-20 row">
-                   
-                   <div class="form-group col-md-9">
+                                
+                <a href="#0" class="text-right block">
+                    <span><i class="fas fa-edit"></i></span>
+                </a>               
+
+                <div class="p-t-20 row">
+
+                   <div class="form-group col-xl-9 col-lg-8 col-md-8 col-sm-6 col-xs-12">
                         <label for="phonenumber">Phone Number</label>
                         <div class="input-group">                                 
                             <input type="tel"  class="form-control" id="phonenumber" placeholder="+1 (049) 999 8888">
@@ -36,39 +34,39 @@
                         </div>
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <label for="extension">Extension</label>
                         <div class="input-group">                                 
                             <input type="number" class="form-control" id="extension" placeholder="123">
                         </div>
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-xl-4 col-lg-5 col-md-5 col-sm-6 col-xs-12">
                         <label for="faxnumber">Fax Number</label>
                         <div class="input-group">                                  
                             <input type="tel" class="form-control" id="faxnumber" placeholder="N/A">                                 
                         </div> 
                     </div>
-                    <div class="form-group col-md-9">
+                    <div class="form-group col-xl-8 col-lg-7 col-md-7 col-sm-6 col-xs-12 ">
                         <label for="email">Email</label>
                         <div class="input-group">
                             <input type="email" class="form-control" id="email" placeholder="example@mail.com">
                         </div>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label for="Address_1">Address 1</label>
                         <div class="input-group">
                             <input type="text" required="" class="form-control" id="Address_1" placeholder="223 E. Concord Street">
                         </div>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label for="Address_2">Address 2</label>
                         <div class="input-group">
                             <input type="text" class="form-control" id="Address_2" placeholder=" N/A">
                         </div>
                     </div>
                     
-                    <div class="form-group col-md-9">
+                    <div class="form-group col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <label for="city">City</label>
                         <div class="input-group">
                             
@@ -76,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <label for="state">State</label>
                         <div class="input-group">
                             
@@ -84,7 +82,7 @@
                         </div>
                     </div> 
 
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <label for="zipcode">Zip Code</label>
                         <div class="input-group">
                             
@@ -92,51 +90,74 @@
                         </div>
                     </div>
 
-                </form>
+                </div>
 
             </div>
         </div>
+
+        <div class="card content-form-payers p-10">
+            <div class="card-body">
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 content-manage">
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 text-manage">
+                        <p class="p-0 m-0">To associate this payer to a group you can do it directly on group management.</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <a href="#" onclick="tabsDynamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-10">Manage Groups</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
-    <div class="col-xs-12 col-md-6 col-sm-6">                                        
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">                                        
         <div class="card content-form-payers">
             <div class="card-body">
-                <div class="content-add-atributes">
-                    <a href="">
-                        <span><i class="fas fa-edit"></i></span>
-                    </a>
-                </div>                                                
-                <form class="form p-t-20">
-                    <div class="row col-md-12 p-b-10">
-                        <div class="col-md-2 content-icon">
+                <a href="#0" class="text-right block">
+                    <span><i class="fas fa-edit"></i></span>
+                </a>                                                
+                <div class="form p-t-20">
+                    <div class="row p-b-10">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 content-icon">
                             <span>
                                 <i class="mdi mdi-ambulance"></i>
                             </span>
                         </div>
-                        <div class="col-md-10 content-title">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-10 col-xl-10 content-title">
                             <h3>Transportation</h3>
                             <p>Payer contract type</p>
                         </div>
                     </div>
 
-                    <div class="row col-md-9 content-contrat">
-                        <div class="col-md-8 columInfo">
-                            <p>NEIC ID:</p>
-                            <p>Tax ID:</p>
-                            <p>Payer eff date:</p>
-                            <p>Payer exp date:</p>
-                            <p>Medicare contrat id:</p>
-                        </div>
-                        <div class="col-md-4 columResult">
-                            <p>ABCD1234</p>
-                            <p>123456</p>
-                            <p>02/02/19</p>
-                            <p>03/02/19</p>
-                            <p>ABC123</p>
-                        </div>
-                    </div>
+                    
+                    <table class="display col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 m-auto" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td class="columInfo"><p>NEIC ID:</p></td>
+                                <td class="columResult"><p>ABCD1234</p></td>
+                            </tr>
+                            <tr>
+                                <td class="columInfo"><p>Tax ID:</p></td>
+                                <td class="columResult"><p>123456</p></td>
+                            </tr>
+                            <tr>
+                                <td class="columInfo"><p>Payer eff date:</p></td>
+                                <td class="columResult"><p>02/02/19</p></td>
+                            </tr>
+                            <tr>
+                                <td class="columInfo"><p>Payer exp date:</p></td>
+                                <td class="columResult"><p>03/02/19</p></td>
+                            </tr>
+                            <tr>
+                                <td class="columInfo"><p>Medicare contrat id:</p></td>
+                                <td class="columResult"><p>ABC123</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        
+                    
                                                                        
-                </form>
+                </div>
             </div>
         </div>
     
@@ -145,35 +166,24 @@
                 <h3 class="card-title">Delegations Associated</h3>
                 <form class="form p-t-20">
                     <ul class="list-group">
-                        <div class="row col-md-12 listCheck">
-                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 listCheck">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" checked="" class="list-group-item filled-in chk-col-light-blue" id="checkbox_1"> 
                                 <label for="checkbox_1"> Compliance </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_2" class="list-group-item  filled-in chk-col-light-blue">
                                 <label for="checkbox_2"> UM </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" checked="" id="checkbox_3" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_3"> Sample Delegation name </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10 col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_4" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_4"> Sample Delegation name </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10 col-md-6">
-                                <input type="checkbox" id="checkbox_5" class="list-group-item filled-in chk-col-light-blue">
-                                <label for="checkbox_5"> Sample Delegation name </label>
-                            </li>
-                             <li class="checkbox checkbox-success p-b-10 col-md-6">
-                                <input type="checkbox" id="checkbox_6" class="list-group-item filled-in chk-col-light-blue">
-                                <label for="checkbox_6"> Sample Delegation name </label>
-                            </li>
-                             <li class="checkbox checkbox-success p-b-10 col-md-6">
-                                <input type="checkbox" id="checkbox_7" class="list-group-item filled-in chk-col-light-blue">
-                                <label for="checkbox_7"> Sample Delegation name </label>
-                            </li>
+                            
                         </div>                                                        
                     </ul>                            
                 </form>
@@ -182,24 +192,10 @@
 
     </div><!-- END  GROUPS -->
 
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="card content-form-payers p-10">
-            <div class="card-body">
-                <div class="row col-md-12 content-manage">
-                    <div class="col-md-7 text-manage">
-                        <p class="p-0 m-0">To associate this payer to a group you can do it directly on group management.</p>
-                    </div>
-                    <div class="col-md-5 text-center">
-                        <a href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-20">Manage Groups</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Payer Atributes-->
 
-    <div class="col-md-6" id="accordion">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" id="accordion">
         <div class="card">
             <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapseOneEditPayer">
               <a class="card-link f-w-600" >
@@ -209,11 +205,11 @@
             </div>
             <div id="collapseOneEditPayer" class="collapse" data-parent="#accordion">
                 <div class="card-body">
-                    <div class="col-md-5 content-button-add-atributes">     
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 content-button-add-atributes">     
                         <button type="button" class="btn btn-block btn-outline-info" data-toggle="modal" data-target="#myModalAttribute">Add more attributes</button>
                     </div>
                     <div class="table-responsive">
-                        <table id="" class="display myTable nowrap table table-hover table-striped" cellspacing="0" width="100%"">
+                        <table id="" class="display myTable nowrap table table-hover table-striped" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th>Atribute</th>
@@ -241,7 +237,7 @@
 
     <!-- Contacts -->
 
-    <div class="col-md-6" id="accordionContact">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" id="accordionContact">
         <div class="card">
             <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapseTwoEditPayer">
               <a class="card-link f-w-600">
@@ -251,7 +247,7 @@
             </div>
             <div id="collapseTwoEditPayer" class="collapse" data-parent="#accordionContact">
                 <div class="card-body">
-                    <div class="col-md-5 content-button-add-atributes">     
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 content-button-add-atributes">     
                         <button type="button" class="btn btn-block btn-outline-info" data-toggle="modal" data-target="#myModalContact">Add new contact info</button>
                     </div>
                     <div class="table-responsive">
