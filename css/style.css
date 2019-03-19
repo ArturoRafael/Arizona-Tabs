@@ -437,6 +437,9 @@ Thumb size
 .hide {
   display: none; }
 
+.block {
+  display: block; }
+
 .img-circle {
   border-radius: 100%; }
 
@@ -6992,40 +6995,58 @@ File: scss
 .hidden-xs-up {
   display: none !important; }
 
+.block-xs-up {
+  display: block !important; }
+
 @media (max-width: 575px) {
   .hidden-xs-down {
-    display: none !important; } }
+    display: none !important; } 
+  .block-xs-down {
+    display: block !important; } }
 
 @media (min-width: 576px) {
   .hidden-sm-up {
-    display: none !important; } }
+    display: none !important; } 
+  .block-sm-up {
+    display: block !important; } }
 
 @media (max-width: 767px) {
   .hidden-sm-down {
-    display: none !important; } }
+    display: none !important; } 
+  .block-sm-down {
+    display: block !important; } }
 
 @media (min-width: 768px) {
   .hidden-md-up {
-    display: none !important; } }
+    display: none !important; } 
+  .block-md-up {
+    display: block !important; } }
 
 @media (max-width: 991px) {
   .hidden-md-down {
-    display: none !important; } }
+    display: none !important; }
+  .block-md-down {
+    display: block !important; } }
 
 @media (min-width: 992px) {
   .hidden-lg-up {
-    display: none !important; } }
+    display: none !important; }
+  .block-lg-up {
+    display: block !important; } }
 
 @media (max-width: 1199px) {
   .hidden-lg-down {
-    display: none !important; } }
+    display: none !important; }
+  .block-lg-down {
+    display: block !important; } }
 
 @media (min-width: 1200px) {
   .hidden-xl-up {
-    display: none !important; } }
+    display: none !important; }
+  .block-xl-up {
+    display: block !important; } }
 
-.hidden-xl-down {
-  display: none !important; }
+
 
 .card-inverse .card-blockquote,
 .card-inverse .card-footer,
@@ -8503,6 +8524,15 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
 
 
 /*******************/
+/*Swal2-Alert*/
+/*******************/
+@media(max-width: 479px){
+  .swal2-popup .swal2-styled.swal2-confirm, .swal2-popup .swal2-styled.swal2-cancel{
+    padding: 6px !important;
+  }
+}
+
+/*******************/
 /*Group Payer*/
 /*******************/
 .filters-row{
@@ -8575,13 +8605,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
 .icon-table-selected{
   color: green;
 }
-.btn-create-group{
-  margin-top: 15px;
-  width: 100%;
-}
-.btn-create-group:hover{
-  color: #ffffff;
-}
+
 .table_group{
   margin-top: auto;
 }
