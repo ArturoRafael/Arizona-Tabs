@@ -8,260 +8,202 @@
         </div>
     </div>
 
-   
-    <div class="p-t-20 form-group col-md-8">
-        <label for="group-name" class="f-w-600">Group name</label>
-        <input type="text" name="plan-name" id="group-name"  maxlength="50" title="Group name" class="form-control" placeholder="Group name *">
-        
-    </div>
-    <div class="p-t-20 form-group col-md-4">
-        <label for="group-id" class="f-w-600">Identifier</label>
-        <input type="text" name="plan-name" id="group-id"  maxlength="10" title="Name of the plan" class="form-control" placeholder="Up to 10 characters *">
-        
-    </div>
-    <div class="form-group col-md-3">
-        <label for="date-effective" class="f-w-600">Effective Date</label>
-        <input type="date" name="date-effective" id="date-effective" class="form-control" placeholder="Effective Date *"> 
-    </div>
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">                                        
+        <div class="card content-form-payers">
+            <div class="card-body"> 
+                <div class="form row">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="group-name" class="f-w-600">Group name</label>
+                        <input type="text" name="plan-name" id="group-name"  maxlength="50" title="Group name" class="form-control" placeholder="Group name">
+                        
+                    </div>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="group-id" class="f-w-600">Identifier</label>
+                        <input type="text" name="plan-name" id="group-id"  maxlength="10" title="Name of the plan" class="form-control" placeholder="Up to 10 characters *">                        
+                    </div>
 
-    <div class="form-group col-md-3">
-        <div class="switchery-content">
-            <label for="date-expiration" class="f-w-600">Expiration Date </label>
-            <input type="checkbox" data-size="small" id="groupBenefitNew_chek1" onchange="changeExpire('groupBenefitNew_chek1','groupBenefit-date-expiration')" checked class="groupBenefitNew jsSwitch" data-color="#ff9900" />
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="date-effective" class="f-w-600">Effective Date</label>
+                        <input type="date" name="date-effective" id="date-effective" class="form-control" placeholder="Effective Date *"> 
+                    </div>
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="switchery-content">
+                            <label for="date-expiration" class="f-w-600">Expiration Date </label>
+                            <input type="checkbox" data-size="small" id="groupBenefitNew_chek1" onchange="changeExpire('groupBenefitNew_chek1','groupBenefit-date-expiration')" checked class="groupBenefitNew jsSwitch" data-color="#ff9900" />
+                        </div>
+                        <input type="date" name="groupBenefit-date-expiration" id="groupBenefit-date-expiration" class="form-control" placeholder="Expiration Date *"> 
+                    </div>
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="network" class="f-w-600">Select the plan network</label>
+                        <div class="input-group">
+                            <select class="form-control custom-select" style="width: 100%;" id="network">
+                                <option>-- In Network --</option>                  
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <input type="date" name="groupBenefit-date-expiration" id="groupBenefit-date-expiration" class="form-control" placeholder="Expiration Date *"> 
+
+
+        <div class="card content-form-payers">
+            <div class="card-body">
+                <h3 class="card-title">Group Type</h3>
+                <div class="row justify-content-center align-items-center p-t-20">
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 content-group-type">
+                        <div class="content-type">
+                            <div class="background-type ribbon-vwrapper-reverse card" id="type_1">
+                                <div class="ribbon ribbon-warning ribbon-vertical-r">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <div class="vertical-center">
+                                    <span><i class="mdi mdi-ambulance"></i></span>
+                                    <h3>Medicare</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 content-group-type">
+                        <div class="content-type">
+                            <div class="background-type ribbon-vwrapper-reverse card" id="type_2">
+                                <div class="vertical-center">
+                                    <span><i class="mdi mdi-medical-bag"></i></span>
+                                    <h3>Medicaid</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 content-group-type">
+                        <div class="content-type">
+                            <div class="background-type ribbon-vwrapper-reverse card" id="type_3">
+                                <div class="vertical-center">
+                                    <span><i class="mdi mdi-domain"></i></span>
+                                    <h3>Commercial</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 content-group-type">
+                        <div class="content-type">
+                            <div class="background-type ribbon-vwrapper-reverse card" id="type_4">
+                                <div class="vertical-center">
+                                    <span><i class="mdi mdi-human-child"></i></span>
+                                    <h3>Healthy Kids</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 content-group-type">
+                        <div class="content-type">
+                            <div class="background-type ribbon-vwrapper-reverse card" id="type_5">
+                                <div class="vertical-center">
+                                    <span><i class="mdi mdi-book"></i></span>
+                                    <h3>SNP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="card content-form-payers">
+            <div class="card-body"> 
+                <h3 class="card-title">Servicing Area</h3>
+                <div class="form p-t-20 row">
 
-    <div class="col-md-12">
-        
-        <fieldset class="fieldset-plan-new">
-        <legend align="center" class="legend-plan-new">Servicing Area</legend>
-        
-                                                   
-            <div class="background-details m-b-15 row">
-                <div class="form-group col-md-6">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                Region
-                            </span>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="region">Region</label>
+                        <div class="input-group">
+                            <select class="form-control custom-select" style="width: 100%;" id="region">
+                                <option>-- Select a region --</option>                  
+                            </select>
                         </div>
-                        <select class="form-control custom-select" id="region">
-                            <option>-- Select a region --</option>                  
-                        </select>
                     </div>
-                </div>
 
-                <div class="form-group col-md-6">                     
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                Country
-                            </span>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="country">Country</label>                     
+                        <div class="input-group">
+                            <select class="form-control custom-select" style="width: 100%;" id="country">
+                                <option>-- Select a country --</option>                  
+                            </select>
                         </div>
-                        <select class="form-control custom-select" id="countr">
-                            <option>-- Select a country --</option>                  
-                        </select>
                     </div>
-                </div>
 
-                <div class="form-group col-md-6">                     
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                City
-                            </span>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="city">City</label>                     
+                        <div class="input-group">
+                            <select class="form-control custom-select" style="width: 100%;" id="city">
+                                <option>-- Select a city --</option>                  
+                            </select>
                         </div>
-                        <select class="form-control custom-select" id="city">
-                            <option>-- Select a city --</option>                  
-                        </select>
                     </div>
-                </div>
 
-                <div class="form-group col-md-6">                     
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                State
-                            </span>
+                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="state">State</label>                     
+                        <div class="input-group">
+                            <select class="form-control custom-select" style="width: 100%;" id="state">
+                                <option>-- Select a state --</option>                  
+                            </select>
                         </div>
-                        <select class="form-control custom-select" id="state">
-                            <option>-- Select a state --</option>                  
-                        </select>
                     </div>
-                </div>
 
+                    <div class="form-group col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-12 col-sm-12 col-xs-12 m-auto text-center p-b-10" >
+                        <button class="btn btn-secondary btnServicing p-10 font-16" onclick="associate('groupBenefitNew')" id="saveServicing">Add Servicing Area</button>
+                    </div>
 
-
-                <div class="form-group m-auto">
-                    <button class="btn btn-secondary p-20 btnServicing font-16 active" onclick="associate('groupBenefitNew')" id="saveServicing">Add Servicing Area</button>
-                </div>
-
-                <div class="table-responsive m-t-40 tb-myTable">
-                    <table id="" class="myTable myTableAssociate display nowrap table table-hover table-striped" cellspacing="0" width="100%"">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Region</th>
-                                <th>Country</th>
-                                <th>City</th>
-                                <th>State</th> 
-                                <th></th>       
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                            <tr>
-                                <td>1234</td>
-                                <td>Region 1</td>
-                                <td>Country 1</td>
-                                <td>City 1</td>
-                                <td>State 1</td>
-                                <td class="text-right">
-                                    <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
-                                    <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
-                                </td>
-                                                                     
-                            </tr>
+                    <div class="col-md-12 m-t-40 tb-myTable">
+                        <div class="table-responsive">
+                            <table id="" class="myTable myTableAssociate display nowrap table table-hover table-striped" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Region</th>
+                                        <th>Country</th>
+                                        <th>City</th>
+                                        <th>State</th> 
+                                        <th></th>       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td>1234</td>
+                                        <td>Region 1</td>
+                                        <td>Country 1</td>
+                                        <td>City 1</td>
+                                        <td>State 1</td>
+                                        <td class="text-right">
+                                            <a href="#" class="p-r-10"><span><i class="fas fa-edit font-normal"></i></span></a>
+                                            <a href="#"><span><i class="fas fa-trash-alt font-normal"></i></span></a>
+                                        </td>
                                                                              
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        <a class="text-no-benefit" href="#"><span class="text-required">No servicing areas added yet</span></a>
-       
-        </fieldset>
-        
-    </div>
- 
-   
-    <div class="col-md-12">
-        <fieldset class="m-t-20">
-            <legend align="center" class="legend-plan-new">Select Group Type</legend>
-            <div class="row h-100 justify-content-center align-items-center p-t-20">
-            
-            <div class="col-md-2 text-center">
-                <div class="content-type ">
-                    <div class="background-type active">
-                        <div class="vertical-center">
-                            <span><i class="mdi mdi-ambulance"></i></span>
-                            <h3 class="active">Medicare</h3>
-                        </div>
-                    </div>                                                
-                </div>
-                <div class="content-check">
-                        <span><i class="mdi mdi-checkbox-marked-circle"></i></span>
-                </div>
-            </div>
-
-            <div class="col-md-2 text-center">
-                <div class="content-type">
-                    <div class="background-type">
-                        <div class="vertical-center">
-                            <span><i class="mdi mdi-medical-bag"></i></span>
-                            <h3>Medicaid</h3>
+                                    </tr>
+                                                                                     
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="content-check">
-                      <span class="visibility-off" ><i class="mdi mdi-checkbox-marked-circle"></i></span> 
-                </div>
-            </div>
+                    <a class="text-no-benefit col-md-12" href="#0"><span class="text-required">No servicing areas added yet</span></a>
 
-            <div class="col-md-2 text-center">
-                <div class="content-type">
-                    <div class="background-type">
-                        <div class="vertical-center">
-                            <span><i class="mdi mdi-domain"></i></span>
-                            <h3>Commercial</h3>
-                        </div>
-                    </div>
-                    
                 </div>
-                 <div class="content-check">
-                      <span class="visibility-off" ><i class="mdi mdi-checkbox-marked-circle"></i></span> 
-                </div>
-            </div>
-
-            <div class="col-md-2 text-center">
-                <div class="content-type">
-                    <div class="background-type">
-                        <div class="vertical-center">
-                            <span><i class="mdi mdi-human-child"></i></span>
-                            <h3>Healthy Kids</h3>
-                        </div>
-                    </div>
-                    
-                </div>
-                 <div class="content-check">
-                      <span class="visibility-off" ><i class="mdi mdi-checkbox-marked-circle"></i></span> 
-                </div>
-            </div>
-
-            <div class="col-md-2 text-center">
-                <div class="content-type">
-                    <div class="background-type">
-                        <div class="vertical-center">
-                            <span><i class="mdi mdi-book"></i></span>
-                            <h3>SNP</h3>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="content-check">
-                      <span class="visibility-off" ><i class="mdi mdi-checkbox-marked-circle"></i></span> 
-                </div>
-            </div>
-
-           </div>
-
-        </fieldset>    
-    </div>
-
-    <div class="col-md-12 m-t-20">
-            
-        <fieldset class="fieldset-plan-new">
-        <legend align="center" class="legend-plan-new">Network Association</legend>
-        
-        <div class="form">                                          
-            <div class="background-details background-assoc row">
-                <div class="form-group col-md-6">
-                    <label for="dept" class="f-w-600">Select the plan network</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                Network
-                            </span>
-                        </div>
-                        <select class="form-control custom-select" id="category">
-                            <option>-- In Network --</option>                  
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group col-md-3">
-                    <label for="effect-assoc" class="f-w-600">Effective Date</label> 
-                    <div class="input-group">                         
-                       <input type="date" class="form-control" name="effect-assoc" id="effect-assoc">
-                     </div>                                                   
-                </div>
-
-                <div class="form-group col-md-3">
-                    <div class="switchery-content">
-                        <label for="expire-assoc" class="f-w-600">Expiration Date</label>
-                        <input type="checkbox" checked="" data-size="small" onchange="changeExpire('groupBenefitNew_chek3','groupBenefit-expire-assoc')" id="groupBenefitNew_chek3" class="groupBenefitNew jsSwitch" data-color="#ff9900" /> 
-                    </div>
-                    <input type="date" name="groupBenefit-expire-assoc" id="groupBenefit-expire-assoc" class="form-control" placeholder="Expiration Date *">
-                </div>
-
             </div>
         </div>
-        </fieldset>
-            
     </div>
-
+   
 
      <div class="col-md-12 content-button m-t-20">
         <button type="button" class="btn waves-effect btn-secondary">Cancel</button>
@@ -271,10 +213,20 @@
 </div>
 <script>
     $(document).ready(function() {
+        $(".custom-select").select2();
         var hre = "groupBenefitNew";
         var elems = Array.prototype.slice.call(document.querySelectorAll('.'+hre+' .jsSwitch'));
         $('.'+hre+' .jsSwitch').each(function() {
             new Switchery($(this)[0], $(this).data());
+        });
+
+        $("html body").on("click", ".content-group-type .content-type .background-type", function(){
+            var div_id = $(this).attr("id");
+            if($("#"+div_id).find(".ribbon").length){
+                $("#"+div_id+" .ribbon").remove();
+            }else{
+                $("#"+div_id).prepend('<div class="ribbon ribbon-warning ribbon-vertical-r"><i class="fa fa-check-circle"></i></div>');
+            }
         });
     });
 </script>

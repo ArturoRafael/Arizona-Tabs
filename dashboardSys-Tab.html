@@ -148,7 +148,7 @@
                                 </div>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                     <label for="descr" class="control-label">Roles</label>
-                                    <select class="selectpicker form-control" required="" id="role" name="role" data-title="Select role" multiple data-style="selectMult">
+                                    <select class="select2 select2-multiple form-control selectMult" required="" id="role" name="role[]" data-select2-placeholder="Select role" style="width: 100%" multiple="multiple">
                                         <option value="1">User</option>
                                         <option value="2">SysAdmin</option>
                                     </select>
@@ -301,7 +301,7 @@
         $('.'+hre+' .js-switch').each(function() {
             new Switchery($(this)[0], $(this).data());
         });
-        $('.'+hre+' .selectpicker').selectpicker();
+        $('.'+hre+' .select2').select2();
         
         $('.'+hre+' .showMjsCreate').hide(); 
 
