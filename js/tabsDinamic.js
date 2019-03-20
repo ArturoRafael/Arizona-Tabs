@@ -1,17 +1,21 @@
-    //Delete tab with icon
+        //Delete tab with icon
     $("html body").on("click",".nav-tabs li .tab-toggle.nav-link.show.active .bg-tab-icon",function(event){
-        var op = confirm("Are you sure you want to close the tab?");
-        if(op == true){
-            var nav = $('.tab-toggle.active');
-            var href = $(nav).attr('href');
-            var tabs = $('.tab-toggle').length;
-            nav.add($(nav).attr('href')).remove();
-            $('li[href="'+href+'"]').remove();
-            $('.nav-tabs a:last').tab('show');
-        }else{
-            return false;
-        }
-
+        swal({
+              title: "Are you sure?",
+              text: "You want to close the tab and lose the current information?",
+              type: "warning", 
+              showCancelButton: true, 
+              confirmButtonColor: "#DD6B55",   
+              confirmButtonText: "Yes, close it!",   
+              cancelButtonText: "No, cancel!"              
+            })
+            .then((willDelete) => {
+              if (willDelete.dismiss != "cancel") {
+                closeTabActive(); 
+              } else {
+                return false;
+              }
+          });
     });
 
     //Show tab edit payer
@@ -51,7 +55,7 @@
             $('.tab-content').append('<div role="tabpanel" class="tab-pane fade" id="'+href+'" aria-labelledby="'+id+'-tab"></div>');
 
             if(!$('#'+href).find("."+id).length){
-                
+                $.ajaxSetup({ cache: false });
                 $("#"+href).load(namefile+".html", function(){
                     
                     //Validations for Data tables
@@ -215,19 +219,28 @@
             $('.nav-tabs a[href="#'+href+'"]').tab('show');
         }else{
             //Confirmation alert on tab already opened
-            var opcion = confirm("Is the tab "+nameTab+" already created, do you want to open a new one?");
-            if (opcion == true) {
+            swal({
+              title: "Are you sure?",
+              text: "Is the tab "+nameTab+" already created. Do you want to close the current one and open a new one?",
+              type: "warning", 
+              showCancelButton: true, 
+              confirmButtonColor: "#DD6B55",   
+              confirmButtonText: "Yes, sure it!",   
+              cancelButtonText: "No, Open tab: "+nameTab              
+            })
+            .then((willDelete) => {
+              if (willDelete.dismiss != "cancel") {
                 var nav = $('#'+id+'-tab');
                 var hrf = $(nav).attr('href');
                 var tabs = $('.tab-toggle').length;
                 nav.add($(nav).attr('href')).remove();
-                $('li[href="'+hrf+'"]').remove();
-                
+                $('li[href="'+hrf+'"]').remove(); 
                 tabsDinamic(namefile,id,href,nameTab);
-                
-            } else {
+              } else {
                 $('.nav-tabs a[href="#'+href+'"]').tab('show');
-            }
+              }
+          });
+
         }
         
     }
@@ -296,3 +309,25 @@
             $('#'+id).attr('disabled','disabled');
         }
     }
+
+    function closeTabActive(){
+
+        var nav = $('.tab-toggle.active');
+        var href = $(nav).attr('href');
+        var tabs = $('.tab-toggle').length;
+        nav.add($(nav).attr('href')).remove();
+        $('li[href="'+href+'"]').remove();
+        $('.nav-tabs a:last').tab('show');
+
+        var itemNav = $('.nav-tabs li .tab-toggle.nav-link.show.active').attr('href');
+        var item = itemNav.replace("#", "");
+            
+        $("#sidebarnav li a").each(function(){
+            if($(this).hasClass("nav-active")){
+                $(this).removeClass("nav-active");
+            }
+        });
+
+        $('#sidebarnav li[data-id="'+item+'"] a').addClass("nav-active");
+    }
+
