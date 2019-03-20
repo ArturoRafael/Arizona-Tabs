@@ -2776,6 +2776,10 @@ widget-chart-page product review
 Form addons page
 ============================================================== */
 /*Bootstrap select*/
+.select2-dropdown{
+  width: max-content !important;
+}
+
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   width: 100%; }
 
@@ -8620,6 +8624,9 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
 /*******************/
 /* Plan Benfit */
 /*******************/
+.text-no-benefit{
+  pointer-events: none;
+}
 
 .switchery-content label{
   float: left;
@@ -8665,7 +8672,6 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
   
 }
 .vertical-center{
-  padding-top: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -8684,21 +8690,14 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
   border-radius: 8px;
   text-align: center; 
   vertical-align: middle; 
-  min-height: 200px;
+  min-height: 100px;
   cursor: pointer;
 }
 
-.background-type:hover, .background-type.active{
-  color: #fff !important;
-  background-color: #ff9900 !important;
-  background:#ff9900 !important;
-}
 .background-type h3{
   padding-top: 20px;
 }
-.background-type h3.active{
-  color: #ffffff;
-}
+
 
 .background-type span i, .content-check span i{
   font-size: 48px;  
