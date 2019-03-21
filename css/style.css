@@ -3495,9 +3495,20 @@ widget-chart-page product review
 Form addons page
 ============================================================== */
 /*Bootstrap select*/
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .select2 {
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100%;
 }
+
+.select2-dropdown {
+    width: max-content !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #ced4da !important;
+    min-height: 38px !important;
+}
+
 .select2-container--default .select2-selection--single {
     border-color: #d9d9d9;
     height: 38px;
@@ -3510,6 +3521,8 @@ Form addons page
     .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 33px;
     }
+    
+   
 
 .input-form .btn {
     padding: 10px 12px;
@@ -4475,15 +4488,54 @@ table.dataTable thead .sorting_desc_disabled {
     float: right;
 }
 
+/***********
+    STATUS
+************/
+
+.status {
+    border-radius:100px;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+.status-success {
+    background: green;
+    border-color: green;
+}
+
+.status-danger {
+    background: red;
+    border-color: red;
+}
+
+.status-warning {
+    background: #FFCC00;
+    border-color: #FFCC00;
+}
+
+
 .content_filt_all {
     padding-top: 20px;
     text-align: right;
 }
 
+.container_filt_table {
+    display:contents;
+    vertical-align:middle;
+}
+
 .content_filt_table {
     margin: 0;
+    padding:0;
     display: inline-block;
     text-align: left;
+}
+
+.btn_print {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 1.8rem;
+    vertical-align: middle;
 }
 
 .content_filt_dropdown .btn-group {
@@ -11028,12 +11080,19 @@ svg:not(:root) {
 
 }
 /*----------
+  Providers
+-----------*/
+#carouselInitGuide .carousel-inner .carousel-item {
+    height:250px;
+}
+/*----------
   Steps Details
 -----------*/
-.inputDiagnosis{
-  width: 96% !important;
-  margin-right: 14px;
+.inputDiagnosis {
+    width: 96% !important;
+    margin-right: 14px;
 }
 .contentDiagnosis{
   display: none;
 }
+
