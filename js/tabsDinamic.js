@@ -1,4 +1,4 @@
-        //Delete tab with icon
+    //Delete tab with icon
     $("html body").on("click",".nav-tabs li .tab-toggle.nav-link.show.active .bg-tab-icon",function(event){
         swal({
               title: "Are you sure?",
@@ -30,7 +30,6 @@
         
         var nav = $(this);
         var href = $(nav).attr('href');
-        console.log(href);
         if(!$(this).hasClass('collapsed')){
             $('.card .card-header.content-add-atributes[href="'+href+'"] .icon-collapse').addClass('ti-angle-up');
             $('.card .card-header.content-add-atributes[href="'+href+'"] .icon-collapse').removeClass('ti-angle-down');                
@@ -318,7 +317,7 @@
         nav.add($(nav).attr('href')).remove();
         $('li[href="'+href+'"]').remove();
         $('.nav-tabs a:last').tab('show');
-
+        /*
         var itemNav = $('.nav-tabs li .tab-toggle.nav-link.show.active').attr('href');
         var item = itemNav.replace("#", "");
             
@@ -328,6 +327,5 @@
             }
         });
 
-        $('#sidebarnav li[data-id="'+item+'"] a').addClass("nav-active");
+        $('#sidebarnav li[data-id="'+item+'"] a').addClass("nav-active"); */
     }
-
