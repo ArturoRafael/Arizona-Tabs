@@ -3553,6 +3553,19 @@ input.select2-search__field {
     width: 14rem !important;
     border: 1px solid #ced4da !important;
 }
+
+@media(max-width: 479px) {
+    .content-selectpicker > div > button{
+        width: 100% !important;
+    }
+    .filter_advanced{
+        display: block;
+    }
+    .filter_advanced input{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
 /*============================================================== 
 Form Material page
  ============================================================== */
