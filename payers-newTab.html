@@ -25,7 +25,7 @@
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <label for="contracttype">Payer Type</label>
                         <div class="input-group">                                 
-                            <select class="form-control custom-select" style="width: 100%;" id="payertype">
+                            <select class="form-control custom_select" style="width: 100%;" id="payertype">
                                 <option>Select payer type</option>                  
                             </select>
                         </div>
@@ -79,17 +79,7 @@
 
                             <input type="text" class="form-control" id="Address_2" placeholder="Address 2" asp-for="Address2">
                         </div>
-                    </div>
-
-                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <label for="state">Country</label>
-                        <div class="input-group">                                  
-                            <select class="form-control custom-select" style="width: 100%;" id="state">
-                                <option> Country 1 </option>
-                                <option> Country 2 </option>                  
-                            </select>
-                        </div>
-                    </div> 
+                    </div>                    
 
                     <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <label for="city">City</label>
@@ -97,20 +87,33 @@
                             <input type="text" required="" class="form-control" id="city" placeholder="City*" asp-for="City">
                         </div>
                     </div>
+                   
                     <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <label for="state">State</label>
                         <div class="input-group">
-                            <select asp-for="State" asp-items="@ViewBag.state" style="width: 100%;" class="form-control custom-select" id="state">
+                            <select class="form-control custom_select" style="width: 100%;" id="state">
                                 <option>Select your State</option>
                             </select>
                         </div>
                     </div>
+                    
                     <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <label for="zipcode">Zip Code</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="zipcode" placeholder="Zip Code" asp-for="ZipCode">
+                            <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
                         </div>
                     </div>
+                    
+                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <label for="country">Country</label>
+                        <div class="input-group">                                  
+                            <select class="form-control custom_select" style="width: 100%;" id="country">
+                                <option> Country 1 </option>
+                                <option> Country 2 </option>                  
+                            </select>
+                        </div>
+                    </div> 
+
                 </div>
             </div>
         </div>
@@ -140,7 +143,7 @@
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="contracttype">Payer contract type</label>
                         <div class="input-group">
-                            <select asp-for="PayerContractType" asp-items="@ViewBag.contractType" class="form-control custom-select" style="width:100%;" id="contracttype">
+                            <select class="form-control custom_select" style="width:100%;" id="contracttype">
                                 <option>Select contract type</option>
                             </select>
                         </div>
@@ -159,9 +162,9 @@
                     </div>
 
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <label for="contracttype">Contract</label>
+                        <label for="contract">Contract</label>
                         <div class="input-group">                                 
-                            <select class="form-control custom-select" style="width: 100%;" id="contract">
+                            <select class="form-control custom_select" style="width: 100%;" id="contract">
                                 <option>Select contract</option>                  
                             </select>
                         </div>
@@ -170,7 +173,7 @@
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="mdcontrat">Medicare Contract ID</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID" asp-for="MedicareContractId">
+                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID">
                         </div>
                     </div>
 
@@ -528,11 +531,3 @@
     </div>
     <!-- /.modal-dialog -->
 </div>   
-
-<script>
-    $(document).ready(function() {
-        $(".custom-select").select2();
-    });
-</script>     
-       
-   
