@@ -14,8 +14,8 @@
         <span class="field_mjs">Fields with (*) are required</span>
         <div class="card content-form-payers">
             <div class="card-body">
-
                 <div class="p-t-20 row">
+                    
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label for="name">Name</label>
                         <div class="input-group">
@@ -30,13 +30,8 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <label for="email">Email</label>
-                        <div class="input-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email" asp-for="Email">
-                        </div>
-                    </div>
-                    <div class="form-group col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    
+                    <div class="form-group col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-12">
                         <label for="phonenumber">Phone Number</label>
                         <div class="input-group">
                             <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number*" asp-for="Phone">
@@ -48,12 +43,28 @@
                             <input type="tel" class="form-control" id="extension" placeholder="Ext." asp-for="PhoneExtension">
                         </div>
                     </div>
-                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-12">
                         <label for="faxnumber">Fax Number</label>
                         <div class="input-group">
                             <input type="tel" class="form-control" id="faxnumber" placeholder="Fax number" asp-for="FaxNumber">
                         </div>
                     </div>
+
+                    <div class="form-group col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" asp-for="Email">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card content-form-payers">
+            <div class="card-body">
+                <div class="p-t-20 row">
 
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="Address_1">Address 1</label>
@@ -104,7 +115,7 @@
             </div>
         </div>
 
-        
+
         <div class="card content-form-payers p-10">
             <div class="card-body">
                 <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 content-manage">
@@ -157,6 +168,13 @@
                     </div>
 
                     <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="mdcontrat">Medicare Contract ID</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID" asp-for="MedicareContractId">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="effdate">Payer Eff Date</label>
                         <div class="input-group">
                             <input type="date" required="" class="form-control" id="effdate" placeholder="Payer Eff Date*" asp-for="EffectiveDate">
@@ -168,12 +186,7 @@
                             <input type="date" class="form-control" id="expdate" placeholder="Payer Exp Date" asp-for="ExpirationDate">
                         </div>
                     </div>
-                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <label for="mdcontrat">Medicare Contract ID</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID" asp-for="MedicareContractId">
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
