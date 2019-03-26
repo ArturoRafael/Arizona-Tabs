@@ -10,100 +10,109 @@
 
                     
                     
-    <div class="col-xs-12 col-sm-6 col-md-6">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
         <span class="field_mjs">Fields with (*) are required</span>
         <div class="card content-form-payers">
-            <div class="card-body">                                               
-                
+            <div class="card-body">
+
                 <div class="p-t-20 row">
-                    <div class="form-group col-md-5">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <label for="name">Name</label>
                         <div class="input-group">
-                            <input type="text" required="" class="form-control" id="name" placeholder="Payer name*">
+                            <input type="text" required="" class="form-control" placeholder="Payer name*" asp-for="Name">
                         </div>
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="phonenumber">Phone Number</label>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <label for="contracttype">Payer Type</label>
                         <div class="input-group">                                 
-                            <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number*">
-                            
-                        </div> 
+                            <select class="form-control custom-select" style="width: 100%;" id="payertype">
+                                <option>Select payer type</option>                  
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="phonenumber">Extension</label>
-                        <div class="input-group">
-                            <input type="number" class="form-control" id="extension" placeholder="Ext.">
-                        </div> 
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="faxnumber">Fax Number</label>
-                        <div class="input-group">
-                            
-                            <input type="tel" class="form-control" id="faxnumber" placeholder="Fax number">                                 
-                        </div> 
-                    </div>
-                    <div class="form-group col-md-8">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <label for="email">Email</label>
                         <div class="input-group">
-                            
-                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <input type="email" class="form-control" id="email" placeholder="Email" asp-for="Email">
                         </div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <label for="phonenumber">Phone Number</label>
+                        <div class="input-group">
+                            <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number*" asp-for="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                        <label for="phonenumber">Ext.</label>
+                        <div class="input-group">
+                            <input type="tel" class="form-control" id="extension" placeholder="Ext." asp-for="PhoneExtension">
+                        </div>
+                    </div>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <label for="faxnumber">Fax Number</label>
+                        <div class="input-group">
+                            <input type="tel" class="form-control" id="faxnumber" placeholder="Fax number" asp-for="FaxNumber">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="Address_1">Address 1</label>
                         <div class="input-group">
-                            
-                            <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1*">
+
+                            <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1*" asp-for="Address1" asp-for="Address1">
                         </div>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="Address_2">Address 2</label>
                         <div class="input-group">
-                            
-                            <input type="text" class="form-control" id="Address_2" placeholder="Address 2">
+
+                            <input type="text" class="form-control" id="Address_2" placeholder="Address 2" asp-for="Address2">
                         </div>
                     </div>
-                    
-                    <div class="form-group col-md-4">
-                        <label for="city">City</label>
-                        <div class="input-group">
-                            
-                            <input type="text" required="" class="form-control" id="city" placeholder="City*">
-                        </div>
-                    </div>
-                     
-                     
-                    <div class="form-group col-md-4">
-                        <label for="state">State</label>
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <label for="state">Country</label>
                         <div class="input-group">                                  
-                            <select class="form-control" id="state">
-                                <option> State 1 </option>
-                                <option> State 2 </option>                  
+                            <select class="form-control custom-select" style="width: 100%;" id="state">
+                                <option> Country 1 </option>
+                                <option> Country 2 </option>                  
                             </select>
                         </div>
                     </div> 
 
-                    <div class="form-group col-md-4">
-                        <label for="zipcode">Zip Code</label>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <label for="city">City</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+                            <input type="text" required="" class="form-control" id="city" placeholder="City*" asp-for="City">
                         </div>
                     </div>
-
+                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <label for="state">State</label>
+                        <div class="input-group">
+                            <select asp-for="State" asp-items="@ViewBag.state" style="width: 100%;" class="form-control custom-select" id="state">
+                                <option>Select your State</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <label for="zipcode">Zip Code</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="zipcode" placeholder="Zip Code" asp-for="ZipCode">
+                        </div>
+                    </div>
                 </div>
-                
             </div>
         </div>
 
         
         <div class="card content-form-payers p-10">
             <div class="card-body">
-                <div class="row col-md-12 content-manage">
-                    <div class="col-md-7 text-manage">
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 content-manage">
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 text-manage">
                         <p class="p-0 m-0">To associate this payer to a group you can do it directly on group management.</p>
                     </div>
-                    <div class="col-md-5 text-center">
-                        <a href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-10">Manage Groups</a>
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <a href="#" onclick="tabsDynamic('groups-Tab','groups','groups','Groups')" class="btn btn-secondary p-10">Manage Groups</a>
                     </div>
                 </div>
             </div>
@@ -112,90 +121,101 @@
     </div>
     
 
-    <div class="col-xs-12 col-sm-6 col-md-6">
-        <span class="nameNewPayer">Contract</span>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <span class="name-hidden hidden-xs-down" >Contract</span>
         <div class="card content-form-payers">
-            <div class="card-body">                                               
-                <form class="form p-t-20 row">
-                    <div class="form-group col-md-6">
+            <div class="card-body">
+                <div class="p-t-20 row">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="contracttype">Payer contract type</label>
-                        <div class="input-group">                                 
-                            <select class="form-control" id="contracttype">
-                                <option>Select contract type</option>                  
+                        <div class="input-group">
+                            <select asp-for="PayerContractType" asp-items="@ViewBag.contractType" class="form-control custom-select" style="width:100%;" id="contracttype">
+                                <option>Select contract type</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
                         <label for="neic">NEIC ID</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="neic" placeholder="NEIC ID*">                                    
+                            <input type="text" class="form-control" id="neic" placeholder="NEIC ID*" asp-for="NeicId">
                         </div>
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
                         <label for="tax">Tax ID</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="tax" placeholder="Tax ID">                                                            
+                            <input type="text" class="form-control" id="tax" placeholder="Tax ID" asp-for="TaxId">
                         </div>
                     </div>
-                    <div class="form-group col-md-4">
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="contracttype">Contract</label>
+                        <div class="input-group">                                 
+                            <select class="form-control custom-select" style="width: 100%;" id="contract">
+                                <option>Select contract</option>                  
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="effdate">Payer Eff Date</label>
                         <div class="input-group">
-                            <input type="date" required="" class="form-control" id="effdate" placeholder="Payer Eff Date*">                                                            
+                            <input type="date" required="" class="form-control" id="effdate" placeholder="Payer Eff Date*" asp-for="EffectiveDate">
                         </div>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="expdate">Payer Exp Date</label>
                         <div class="input-group">
-                            <input type="date" class="form-control" id="expdate" placeholder="Payer Exp Date">                                                           
+                            <input type="date" class="form-control" id="expdate" placeholder="Payer Exp Date" asp-for="ExpirationDate">
                         </div>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <label for="mdcontrat">Medicare Contract ID</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID">                                     
+                            <input type="text" class="form-control" id="mdcontrat" placeholder="Medicare contract ID" asp-for="MedicareContractId">
                         </div>
-                    </div>                                                    
-                </form>
+                    </div>
+                </div>
             </div>
         </div>
     
         <div class="card content-form-payers p-10">
             <div class="card-body content-max-payer">
                 <h3 class="card-title">Delegations Associated</h3>
-                <form class="form p-t-20">                                                    
+                <div class="form p-t-20">                                                    
                     <ul class="list-group">
-                        <div class="row col-md-12 listCheck">
-                            <li class="checkbox checkbox-success p-b-10 col-md-6">
+                        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 listCheck">
+
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" class="list-group-item filled-in chk-col-light-blue" id="checkbox_1"> 
                                 <label for="checkbox_1"> Compliance </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10 col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_2" class="list-group-item  filled-in chk-col-light-blue">
                                 <label for="checkbox_2"> UM </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_3" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_3"> Sample Delegation name 1 </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_4" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_4"> Sample Delegation name 2 </label>
                             </li>
-                            <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_5" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_5"> Sample Delegation name 3 </label>
                             </li>
-                             <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_6" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_6"> Sample Delegation name 4 </label>
                             </li>
-                             <li class="checkbox checkbox-success p-b-10  col-md-6">
+                            <li class="checkbox checkbox-success p-b-10 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="checkbox_7" class="list-group-item filled-in chk-col-light-blue">
                                 <label for="checkbox_7"> Sample Delegation name 5 </label>
                             </li>
                         </div>                                                        
                     </ul>                            
-                </form>
+                </div>
             </div>
         </div>         
     </div>
@@ -204,7 +224,7 @@
 
 
     <!-- Payer Atributes-->
-    <div class="col-md-6" id="accordion">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" id="accordion">
         <div class="card">
             <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapseOnePayerNew" aria-expanded="true">
               <a class="card-link f-w-600">
@@ -214,7 +234,7 @@
             </div>
             <div id="collapseOnePayerNew" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
-                    <div class="col-md-5 content-button-add-atributes">     
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 content-button-add-atributes">    
                         <button type="button" class="btn btn-block btn-outline-info" data-toggle="modal" data-target="#myModalAttributePayerNew">Add more atributes</button>
                     </div>
                     <div class="table-responsive">
@@ -241,7 +261,7 @@
 
 
     <!-- Payer CONTANCT-->
-    <div class="col-md-6" id="accordionConact">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" id="accordionConact">
         <div class="card">
             <div class="card-header content-add-atributes" data-toggle="collapse" href="#collapsetwoPayerNew" aria-expanded="true">
               <a class="card-link f-w-600" >
@@ -251,7 +271,7 @@
             </div>
             <div id="collapsetwoPayerNew" class="collapse show" data-parent="#accordionConact">
                 <div class="card-body">
-                    <div class="col-md-5 content-button-add-atributes">     
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 content-button-add-atributes">     
                         <button class="btn btn-block btn-outline-info" id="basic-addon1" data-toggle="modal" data-target="#myModalContactPayerNew">Add new contact info</button>
                     </div>
                     <div class="table-responsive">
@@ -275,7 +295,7 @@
     </div>
     <!-- END  CONTANCT -->
                     
-    <div class="col-md-12 content-button">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 content-button">
         <button type="button" class="btn waves-effect btn-secondary">Cancel</button>
         <button class="btn waves-effect waves-light btn-primary" type="button" id="savePayer">Save Payer</button>
     </div>
@@ -284,93 +304,119 @@
 <!-- END ROW -->                               
                     
 <!-- modal content -->
-<div id="myModalContactPayerNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div id="myModalContactPayerNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalAddContact" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header-contact"> 
+            <div class="modal-header"> 
+                <h4 class="modal-title" id="myModalAddContact">Add Contact Info</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
-            <h4 class="modal-title text-center" id="myModalLabel">Add Contact Info</h4>
-            <div class="modal-body">                                
-                <form class="form p-10 row" >                                    
-                        <div class="form-group col-md-12">
-                            <label for="dept">Area - Departament</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        Area - Dep
-                                    </span>
+            
+            <div class="modal-body">  
+
+                <form class="form row" >                                    
+                
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="card m-b-0">
+                            <div class="card-body row"> 
+                                <div class="form-group col-md-12">
+                                    <label for="name">Contact Name</label>
+                                    <div class="input-group">                                                
+                                        <input type="text" required="" class="form-control" id="name" placeholder="Contact name">
+                                    </div>
                                 </div>
-                                <select class="form-control custom-select" id="dept">
-                                    <option>Marketing and Sales</option>                  
-                                </select>
+                                <div class="form-group col-md-9">
+                                    <label for="phonenumber">Phone number</label>
+                                    <div class="input-group">                                                
+                                        <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number">
+                                    </div> 
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="extension">Extension</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="extension" placeholder="Ext.">
+                                    </div> 
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="faxnumber">Fax number</label>
+                                    <div class="input-group">                                               
+                                        <input type="text" class="form-control" id="faxnumber" placeholder="Fax number">
+                                    </div> 
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label for="email">Email</label>
+                                    <div class="input-group">                                                
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group col-md-12">
-                            <label for="name">Contact Person</label>
-                            <div class="input-group">                                                
-                                <input type="text" required="" class="form-control" id="name" placeholder="Contact Person">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="card m-b-0">
+                            <div class="card-body row"> 
+                                <div class="form-group col-md-12">
+                                    <label for="dept">Contact Department</label>
+                                    <div class="input-group">                                
+                                        <select class="form-control custom-select" style="width: 100%;" id="dept">
+                                            <option>Marketing and Sales</option>                  
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="Address_1">Address 1</label>                                           
+                                    <div class="input-group">                                                
+                                        <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">                                            
+                                    <label for="Address_2">Address 2</label> 
+                                    <div class="input-group">                                                
+                                        <input type="text" class="form-control" id="Address_2" placeholder="Address 2">
+                                    </div>
+                                </div>
+
+                                 <div class="form-group col-md-6">
+                                    <label for="city">Country</label>                                            
+                                    <div class="input-group"> 
+                                        <select class="form-control custom-select" style="width: 100%;" id="country">
+                                            <option>--Select your Country--</option>                  
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="city">City</label>                                            
+                                    <div class="input-group"> 
+                                        <select class="form-control custom-select" style="width: 100%;" id="city">
+                                            <option>--Select your City--</option>                  
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="state">State</label>                                            
+                                    <div class="input-group">                                                
+                                        <select class="form-control custom-select" style="width: 100%;" id="state">
+                                            <option>--Select your State--</option>                  
+                                        </select>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group col-md-6">
+                                    <label for="zipcode">Zip Code</label>                                            
+                                    <div class="input-group">                                                
+                                        <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group col-md-9">
-                            <label for="phonenumber">Phone number</label>
-                            <div class="input-group">                                                
-                                <input type="tel" required="" class="form-control" id="phonenumber" placeholder="Phone number">
-                            </div> 
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="extension">Extension</label>
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="extension" placeholder="Ext.">
-                            </div> 
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="faxnumber">Fax number</label>
-                            <div class="input-group">                                               
-                                <input type="text" class="form-control" id="faxnumber" placeholder="Fax number">
-                            </div> 
-                        </div>
-                        <div class="form-group col-md-8">
-                            <label for="email">Email</label>
-                            <div class="input-group">                                                
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label for="Address_1">Address 1</label>                                           
-                            <div class="input-group">                                                
-                                <input type="text" required="" class="form-control" id="Address_1" placeholder="Address 1">
-                            </div>
-                        </div>
-                        <div class="form-group col-md-12">                                            
-                            <label for="Address_2">Address 2</label> 
-                            <div class="input-group">                                                
-                                <input type="text" class="form-control" id="Address_2" placeholder="Address 2">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group col-md-8">
-                            <label for="city">City</label>                                            
-                            <div class="input-group">                                                
-                                <input type="text" required="" class="form-control" id="city" placeholder="City">
-                            </div>
-                        </div>
-                         <div class="form-group col-md-4">
-                            <label for="zipcode">Zip Code</label>                                             
-                            <div class="input-group">                                                
-                                <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
-                            </div>
-                        </div>
-                         
-                        <div class="form-group col-md-12">
-                            <label for="state">State</label>                                            
-                            <div class="input-group">                                                
-                                <select class="form-control custom-select" id="state">
-                                    <option>--Select your State--</option>                  
-                                </select>
-                            </div>
-                        </div>
+                        </div> 
+                    </div>
+
                 </form>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
@@ -468,6 +514,12 @@
         </div>                       
     </div>
     <!-- /.modal-dialog -->
-</div>        
+</div>   
+
+<script>
+    $(document).ready(function() {
+        $(".custom-select").select2();
+    });
+</script>     
        
    
