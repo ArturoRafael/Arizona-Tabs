@@ -2055,7 +2055,7 @@ li.dropdown-item.items-filt {
 Custom-select
 ******************/
 .custom-select {
-    background: url(../../assets/images/custom-select.png) right 0.75rem center no-repeat;
+    background: url(../assets/images/custom-select.png) right 0.75rem center no-repeat;
 }
 
 /*******************
@@ -3547,7 +3547,12 @@ input.select2-search__field {
         width: 50px !important;
     }
 
+/*Bootstrap selectpicker*/
 
+.content-selectpicker > div > button{
+    width: 14rem !important;
+    border: 1px solid #ced4da !important;
+}
 /*============================================================== 
 Form Material page
  ============================================================== */
