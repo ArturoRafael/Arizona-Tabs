@@ -1,7 +1,7 @@
 
 <div class="row payer">
  
-   <div class="col-md-12 p-b-20"> 
+   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-b-20"> 
         <div class="btn-group content_nav nav-secondary" role="group" aria-label="Basic example">
             <a type="button" href="#" class="btn btn-nav nav-active">Dashboard</a>
             <a type="button" href="#" onclick="tabsDinamic('groups-Tab','groups','groups','Groups')" class="btn btn-nav">Groups</a>
@@ -10,33 +10,33 @@
     </div>
     
 
-    <div class="beforetable col-md-12 p-b-40">
+    <div class="beforetable col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-b-40">
+        
         <div class="content_filt_all">
-            <div class="col-lg-2 col-md-4 content_filt_table">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 content_filt_table">
                 <button type="button" onclick="tabsDinamic('payers-newTab','newPayer','newPayer','New Payer')" class="btn btn-block btn-outline-info">New Payer</button>
             </div>
         </div>
+
         <form role="form" class="row">
-            <div class="col-md-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h2>Filter and Advanced Search</h2>
             </div>
             
-            <div class="col-md-5">
-            
-            <div class="input-group">
-              <div class="input-group-prepend content-selectpicker">
-                
-                <select class="selectpicker form-control" multiple required="" data-title="Select" data-style="form-control btn-default">
-                        <option>ID</option>
-                        <option>Address</option>                              
-                        <option>City</option>
-                        <option>ALT ID</option>
-                </select>
-                
-              </div>
-              <input type="text" required="" class="form-control" placeholder="Value">
-            </div>
-
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">            
+                <div class="input-group filter_advanced">
+                  <div class="input-group-prepend content-selectpicker">
+                    
+                    <select class="selectpicker form-control" multiple required="" data-title="Select" data-style="form-control btn-default">
+                            <option>ID</option>
+                            <option>Address</option>                              
+                            <option>City</option>
+                            <option>ALT ID</option>
+                    </select>
+                    
+                  </div>
+                  <input type="text" required="" class="form-control" placeholder="Value">
+                </div>
             </div>
 
             <div class="text-right btnsearchAvanced">
@@ -46,7 +46,7 @@
         </form>
     </div>
 
-    <div class="afterfilt col-md-12">
+    <div class="afterfilt col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
         <div class="table-responsive">
             <table id="" class="myTable myTableDas tablePayers display nowrap table table-hover table-striped" cellspacing="0" width="100%">
