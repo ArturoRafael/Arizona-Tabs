@@ -3562,7 +3562,7 @@ input.select2-search__field {
         display: block;
     }
     .filter_advanced input{
-        width: 100%;
+        width: 100% !important;
         margin-top: 10px;
     }
 }
