@@ -55,8 +55,10 @@
 
             if(!$('#'+href).find("."+id).length){
                 $.ajaxSetup({ cache: false });
+                
                 $("#"+href).load(namefile+".html", function(){
-                    
+                    $(".custom_select").select2();
+                    $('.selectpicker').selectpicker();
                     //Validations for Data tables
 
                     if ( ! $.fn.DataTable.isDataTable('.myTable') && $(".myTable").length > 0) {
