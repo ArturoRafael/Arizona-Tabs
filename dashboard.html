@@ -17,6 +17,7 @@
     <link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
     <link href="assets/plugins/multiselect/css/multi-select.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/toast-master/css/toast.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -190,7 +191,7 @@
                                     <div role="tabpanel" class="tab-pane fade show active" id="default" aria-labelledby="default-tab">
                                         <div class="row">
                                             <!-- Column -->
-                                            <div class="col-lg-3 col-md-6">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="card content-form-payers">
                                                     <div class="card-body">
                                                         <div class="d-flex flex-row">
@@ -205,7 +206,7 @@
                                             </div>
                                             <!-- Column -->
                                             <!-- Column -->
-                                            <div class="col-lg-3 col-md-6">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="card content-form-payers">
                                                     <div class="card-body">
                                                         <div class="d-flex flex-row">
@@ -220,7 +221,7 @@
                                             </div>
                                             <!-- Column -->
                                             <!-- Column -->
-                                            <div class="col-lg-3 col-md-6">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="card content-form-payers">
                                                     <div class="card-body">
                                                         <div class="d-flex flex-row">
@@ -232,25 +233,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Column -->
-                                            <!-- Column -->
-                                            <div class="col-lg-3 col-md-6">
-                                                <div class="card content-form-payers">
-                                                    <div class="card-body">
-                                                        <div class="d-flex flex-row">
-                                                            <div class="round round-lg align-self-center round-danger"><i class="mdi mdi-bullseye"></i></div>
-                                                            <div class="m-l-10 align-self-center">
-                                                                <h3 class="m-b-0 font-light">Ad. Expense</h3>
-                                                                <h5 class="text-muted m-b-0">687</h5></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Column -->
+                                            <!-- Column --> 
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-12">
                                                 <div class="card content-form-payers">
                                                     <div class="card-body">
                                                         <h3 class="card-title">Our Visitors</h3>
@@ -265,7 +252,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-lg-4 col-md-12">
+                                            <div class="col-xl-4 col-lg-4 col-md-12">
                                                 <div class="card content-form-payers">
                                                     <div class="card-body">
                                                         <h3 class="card-title">Our Visitors</h3>
@@ -286,12 +273,36 @@
 
                             </div>
                         </div>
-                    </div>                    
+                    </div>
+
+                    <!-- modal Delete -->
+                    <div id="modalRemove" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vcenter" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"></h4>             
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                </div>            
+                                <div class="modal-body">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn waves-effect btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary waves-effect button_modal_alert_action"></button>               
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+
+
                 </div>
                 
+
+                
+            
+
+
             </div>            
             <!-- End Container fluid  -->
-            
             
             <!-- footer -->            
             <footer class="footer footerIndex">
@@ -332,7 +343,58 @@
     <script src="assets/plugins/multiselect/js/jquery.multi-select.js" type="text/javascript"></script>
     <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
     <script src="assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/plugins/toast-master/js/jquery.toast.js"></script>
+    <script src="js/toast.js"></script>
     <script src="js/tabsDinamic.js"></script>
+    <script src="js/validation.js"></script>
+    <script type="text/javascript">
+        $("body").removeClass("mini-sidebar");
+            $('.navbar-brand span').show();
+        /*
+        title_content = Modal title (Not Required)
+        text_content = Modal text (Required)
+        
+        icon_alert =  These icons will be used ( https://wrappixel.com/demos/admin-templates/material-pro/minisidebar/icon-material.html ) (Icon default: mdi-alert-circle) (Not Required)
+        color_icon = Icon color (Color default: #ffb22b) (Not Required)
+        
+        id_button = Name of the ID that will have the action button (Not Required)
+        text_button_action = Text that will have the action button (Text default: Ok) (Not Required)
+        */ /*
+        function generate_modal_alert(text_content, title_content = "", icon_alert = "", color_icon = "",id_button = "", text_button_action = ""  ) {
+            var content = ""
+            $("#modalRemove .modal-header .modal-title").text("");
+            $("#modalRemove .modal-body").html("");
+            $("#modalRemove .modal-footer .button_modal_alert_action").text("");    
+            
+            if(text_content != null && text_content.length > 0){
+                
+                if(title_content.length > 0){ $("#modalRemove .modal-header .modal-title").text(title_content); }
 
+                if(icon_alert.length <= 0){ icon_alert = "mdi-alert-circle"; }
+
+                if(text_button_action.length <= 0){ text_button_action = "Ok"; }
+                
+                if(id_button.length <= 0){ id_button = ""; }
+
+                
+                content = '<div class="row info-modal"><div class="col-4"><h2><span>';
+                if(color_icon.length <= 0){
+                    content += '<i class="mdi '+icon_alert+'" ></i>';
+                }else{
+                    content += '<i style="color:'+color_icon+'" class="mdi '+icon_alert+'" ></i>';
+                }
+                content += '</span></h2></div><div class="col-8 text-left"><strong><p>'+text_content+'</p></strong></div></div>';
+
+
+                $("#modalRemove .modal-body").html(content); 
+                
+                $("#modalRemove .modal-footer .button_modal_alert_action").attr("id", id_button);                
+                $("#modalRemove .modal-footer .button_modal_alert_action").text(text_button_action);
+                $("#modalRemove").modal("show");
+            }
+            return false;
+            
+        } */
+    </script>
 </body>
 </html>
