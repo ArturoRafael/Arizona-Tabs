@@ -171,6 +171,9 @@ html body .db {
     white-space: nowrap;
 }
 
+.not-box-shadow {
+    box-shadow:none !important;
+}
 /*******************
 Blockquote
 *******************/
@@ -625,6 +628,10 @@ html body .text-themecolor {
 /*******************
 Background Colors
 *******************/
+.bg-default {
+    background-color: transparent !important;
+}
+
 .bg-primary {
     background-color: #7460ee !important;
 }
@@ -2055,7 +2062,7 @@ li.dropdown-item.items-filt {
 Custom-select
 ******************/
 .custom-select {
-    background: url(../assets/images/custom-select.png) right 0.75rem center no-repeat;
+    background: url(../../assets/images/custom-select.png) right 0.75rem center no-repeat;
 }
 
 /*******************
@@ -3523,7 +3530,8 @@ Form addons page
 
 input.select2-search__field {
     min-width: 50px !important;
-}    
+}
+
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
     border: 1px solid #ced4da !important;
@@ -3549,23 +3557,35 @@ input.select2-search__field {
 
 /*Bootstrap selectpicker*/
 
+button.btn.dropdown-toggle.bs-placeholder.form-control.btn-default {
+    border: 1px solid #ced4da;
+}  
+
+.filter-option-inner-inner{
+    color:#495057;
+}
+
+
 .content-selectpicker > div > button{
     width: 14rem !important;
     border: 1px solid #ced4da !important;
 }
 
-@media(max-width: 479px) {
+@media (max-width: 478px) {
+    .input-group.filter_advanced{
+        display: block;
+    }
     .content-selectpicker > div > button{
         width: 100% !important;
-    }
-    .filter_advanced{
-        display: block;
     }
     .filter_advanced input{
         width: 100% !important;
         margin-top: 10px;
     }
+
 }
+
+
 /*============================================================== 
 Form Material page
  ============================================================== */
@@ -3770,14 +3790,27 @@ Form Material page
 
 .form-group.error input,
 .form-group.error select,
-.form-group.error textarea {
-    border: 1px solid #fc4b6c;
+.form-group.error textarea,
+.form-group.error .select2-container--default .select2-selection--single,
+.form-group.error .content-selectpicker > div > button  {
+    border: 1px solid #fc4b6c !important;
+    margin-bottom: 0px;
 }
 
 .form-group.validate input,
 .form-group.validate select,
-.form-group.validate textarea {
-    border: 1px solid #26c6da;
+.form-group.validate textarea,
+.form-group.validate .select2-container--default .select2-selection--single,
+.form-group.validate .content-selectpicker > div > button {
+    border: 1px solid #51A351;
+}
+
+.form-group.issue input,
+.form-group.issue select,
+.form-group.issue textarea,
+.form-group.issue .select2-container--default .select2-selection--single,
+.form-group.issue .content-selectpicker > div > button {
+    border: 1px solid #fc4b6c;
 }
 
 .form-group.error .help-block ul {
@@ -3791,7 +3824,7 @@ Form Material page
 
 .form-group.issue .help-block ul {
     padding: 0px;
-    color: #ffb22b;
+    color: #fc4b6c;
 }
 
     .form-group.issue .help-block ul li {
@@ -4679,7 +4712,7 @@ Table-Data Table
     .content-catg[aria-expanded=true] {
     }
 
-    .info-modal-remove {
+    .info-modal {
         text-align: center;
     }
 
@@ -4699,7 +4732,7 @@ Table-Data Table
             text-align: right;
         }
 
-    .info-modal-remove h2 span i {
+    .info-modal h2 span i {
         color: #ffb22b;
         font-size: 2.8rem;
     }
@@ -5126,7 +5159,6 @@ Vertical tabs
         }
 
         .btnsearchAvanced {
-            padding-top: 10px;
             position: relative;
             width: 100%;
             padding-right: 15px;
@@ -5137,6 +5169,8 @@ Vertical tabs
             padding-bottom: 10px;
         }
     }
+
+    
 
     .content-subnav {
         height: 90px;
